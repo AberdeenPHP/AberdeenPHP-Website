@@ -112,10 +112,7 @@ function print_header ( $title="", $tagline="", $image="", $description = "", $k
                     </li>
                     <li>
                         <a href="community.php">Community</a>
-                    </li>     
-                    <li>
-                        <a href="code-of-conduct.php">Code of conduct</a>
-                    </li>                                     
+                    </li>                                       
                     <li>
                         <a href="contact.php">Contact</a>
                     </li>
