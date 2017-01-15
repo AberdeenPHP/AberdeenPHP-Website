@@ -29,6 +29,7 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h2>Some various photos of AberdeenPHP</h2>
+                <p>A few photos, in no particualr order, of various talks and meet-ups.</p>
             </div>
         </div>
                 
@@ -56,8 +57,8 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
         <div class="row">
             <div class="col-md-4">
                 <p>
-                    <img src="images/aberdeenphp_birthday_cake_april_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    On the group's first birthday, in April 2016, we had a cake.                
+                    <img src="images/aberdeenphp_meet_november_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    The first meetup after the ScotlandPHP confernce, with a few folk sporting their new t-shirts, November 2016.                
                 </p>             
             </div>
             <div class="col-md-4">
@@ -68,8 +69,8 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             </div>            
             <div class="col-md-4">
                 <p>
-                    <img src="images/aberdeenphp_meet_november_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    The first meetup after the ScotlandPHP confernce, with a few folk sporting their new t-shirts, November 2016.
+                    <img src="images/aberdeenphp_meet_febuary_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Andy talking about Joomla, Febuary 2015.
                 </p> 
             </div>            
         </div>  
@@ -89,8 +90,8 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             </div>            
             <div class="col-md-4">
                 <p>
-                    <img src="images/aberdeenphp_meet_febuary_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    Andy talking about Joomla, Febuary 2015.
+                    <img src="images/aberdeenphp_birthday_cake_april_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    On the group's first birthday, in April 2016, we had a cake.
                 </p>
             </div>            
         </div>  
