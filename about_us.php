@@ -22,13 +22,13 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
                     group, it really embraces the full gamut of the web.  The group meets over pizza and 
                     beer or soft drinks, ranging and rambling chat, in addition to interesting and 
                     informative talks.  Over the years we've had talks about design, continuous integration, 
-                    docker, optimisation, side projects, learning, katas, testing, joomla, minihacks, 
-                    lightning talks, PHP7 and many other things.  We also collaborate closely with the other 
-                    PHP user groups in Scotland, via the ScotlandPHP umbrella organisation. The group is a 
-                    diverse, welcoming, sociable, relaxed, irreverent, informative and fun.  A couple of 
-                    times a year, usually December and July, the meeting will switch to being in the pub 
-                    for more of a social vibe.  The meetings often feature Rob's news, a breakdown of PHP, 
-                    web and tech news from Rob Cooper, which is always excellent.</p>
+                    docker, optimisation, side projects, learning, katas, devops, testing, joomla, minihacks, 
+                    lightning talks, PHP7 and many other things. The group is a  diverse, welcoming, sociable, 
+                    relaxed, irreverent, informative and fun.  A couple of times a year, usually December and 
+                    July, the meeting will switch to being in the pub for more of a social vibe.  The meetings 
+                    often feature Rob's news, a breakdown of PHP, web and tech news from Rob Cooper, which is 
+                    always excellent.  We also collaborate closely with the other PHP user groups in Scotland, 
+                    via the ScotlandPHP umbrella organisation.</p>
 
 
                 <p>Danny was one of the organisers of the first ScotlandPHP conference in October 2016, 
@@ -48,7 +48,7 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h2>Some various photos of AberdeenPHP</h2>
-                <p>A few photos, in no particualr order, of various talks and meet-ups.</p>
+                <p>A few photos, in no particular order, of various talks and meet-ups.</p>
             </div>
         </div>
                 
@@ -77,7 +77,7 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_november_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    The first meetup after the ScotlandPHP confernce, with a few folk sporting their new t-shirts, November 2016.                
+                    The first meetup after the ScotlandPHP conference, with a few folk sporting their new t-shirts, November 2016.                
                 </p>             
             </div>
             <div class="col-md-4">
@@ -89,7 +89,7 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_febuary_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    Andy talking about Joomla, Febuary 2015.
+                    Andy talking about Joomla, February 2015.
                 </p> 
             </div>            
         </div>  
@@ -98,13 +98,13 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_continousphp_september_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    A talk about continous intergation, September 2015.
+                    A talk about continuous integration, September 2015.
                 </p> 
             </div>          
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_september_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    Continous intergation is a popular topic at the group, September 2015.
+                    Continuous integration is a popular topic at the group, September 2015.
                 </p> 
             </div>            
             <div class="col-md-4">
