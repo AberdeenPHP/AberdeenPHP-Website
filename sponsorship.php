@@ -8,7 +8,7 @@
 
 require_once("includes/common.php"); 
 
-print_header("Aberdeen PHP - Sponsorship", "Get involved and help");
+print_header("Sponsor Us", "Get involved and help");
 ?>
 
 
