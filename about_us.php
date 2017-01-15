@@ -36,19 +36,19 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_rasmus_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    Some members of the group with Rasmus Lerdorf, creator of PHP, at the Scotland PHP conference in Edinburgh, October 2016.
                 </p>             
             </div>
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_august_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    Mark McAulay talking about design for developers, August 2015.
                 </p> 
             </div>            
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_polybag_raffle_october_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    We have raffles sometimes, and sometimes we use a polybag :)
                 </p>             
             </div>          
         </div>        
@@ -56,20 +56,20 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
         <div class="row">
             <div class="col-md-4">
                 <p>
-                    <img src="images/aberdeenphp_meet_febuary_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    <img src="images/aberdeenphp_birthday_cake_april_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    On the group's first birthday, in April 2016, we had a cake.                
                 </p>             
             </div>
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_june_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    Danny talking about code Katas, June 2016.
                 </p> 
             </div>            
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_november_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    The first meetup after the ScotlandPHP confernce, with a few folk sporting their new t-shirts, November 2016.
                 </p> 
             </div>            
         </div>  
@@ -78,43 +78,40 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_continousphp_september_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    A talk about continous intergation, September 2015.
                 </p> 
             </div>          
-        
-        
-
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_september_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    Continous intergation is a popular topic at the group, September 2015.
                 </p> 
             </div>            
             <div class="col-md-4">
                 <p>
-                    <img src="images/aberdeenphp_birthday_cake_april_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
-                </p> 
+                    <img src="images/aberdeenphp_meet_febuary_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Andy talking about Joomla, Febuary 2015.
+                </p>
             </div>            
         </div>  
         
         <div class="row">
             <div class="col-md-4">
                 <p>
-                    <img src="images/aberdeenphp_meet_september_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    <img src="images/aberdeenphp_meet_designer_august_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Mark McAulay asking a tricky question at the meeting in August 2015.
                 </p>             
             </div>
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_stickers_october_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    Sometimes we have stickers, as is the techy way.
                 </p> 
             </div>            
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_thomas_cat_october_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    tbc
+                    Thomas doing a talk in October 2015, always to to get kittens into your talk.
                 </p> 
             </div>            
         </div>                  
