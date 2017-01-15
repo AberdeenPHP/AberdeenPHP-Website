@@ -8,7 +8,7 @@
 
 require_once("includes/common.php"); 
 
-print_header("Aberdeen PHP", "The heart of Aberdeen's Web development comunity");
+print_header("Aberdeen PHP", "Code of conduct - be awesome to evaryone");
 ?>
 
 
@@ -17,7 +17,7 @@ print_header("Aberdeen PHP", "The heart of Aberdeen's Web development comunity")
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-
+                <h2>Code of COnduct</h2>
 	            <p>All attendees, speakers, sponsors and volunteers are bound by the following code of conduct.&nbsp;We are expecting cooperation from all participants to help ensuring a safe environment for&nbsp;all involved.</p>
                 <p>Need Help?</p>
                 <p>Enquiries and complaints of any type should be sent to either of these:<br>

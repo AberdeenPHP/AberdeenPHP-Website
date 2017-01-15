@@ -8,7 +8,7 @@
 
 require_once("includes/common.php"); 
 
-print_header("Aberdeen PHP", "The heart of Aberdeen's Web development comunity");
+print_header("Give a talk", "Come and give a talk, join in and share what you know.");
 ?>
 
 

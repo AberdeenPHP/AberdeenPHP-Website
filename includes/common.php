@@ -97,7 +97,7 @@ function print_header ( $title="", $tagline="", $image="", $description = "", $k
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">Aberdeen PHP User Group</a>
+                <a class="navbar-brand" href="index.html"><img src="images/aberdeenphp_logo_vsmall.png" alt="AberdeenPHP"/> AberdeenPHP</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -118,6 +118,9 @@ function print_header ( $title="", $tagline="", $image="", $description = "", $k
                     <li>
                         <a href="sponsorship.php">Sponsorship</a>
                     </li>
+                    <li>
+                        <a href="https://news.aberdeenphp.co.uk" target="_blank">News</a>
+                    </li>                      
                     <li>
                         <a href="community.php">Community</a>
                     </li>                                       
