@@ -17,11 +17,30 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <h1>History and background.</h1>
-                <p>Content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content.</p>
-                <p>Content content content.</p>
-                <p>Content content content content content content content content content content content content content content content.</p>
-                <p>Content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content.</p>
-                <p></p>
+                <p>Aberdeen PHP user group was started in December 2014 by Danny Wilson and we've been 
+                    meeting every first Wednesday of the month since then.  Although formed as a PHP user 
+                    group, it really embraces the full gamut of the web.  The group meets over pizza and 
+                    beer or soft drinks, ranging and rambling chat, in addition to interesting and 
+                    informative talks.  Over the years we've had talks about design, continuous integration, 
+                    docker, optimisation, side projects, learning, katas, testing, joomla, minihacks, 
+                    lightning talks, PHP7 and many other things.  We also collaborate closely with the other 
+                    PHP user groups in Scotland, via the ScotlandPHP umbrella organisation. The group is a 
+                    diverse, welcoming, sociable, relaxed, irreverent, informative and fun.  A couple of 
+                    times a year, usually December and July, the meeting will switch to being in the pub 
+                    for more of a social vibe.  The meetings often feature Rob's news, a breakdown of PHP, 
+                    web and tech news from Rob Cooper, which is always excellent.</p>
+
+
+                <p>Danny was one of the organisers of the first ScotlandPHP conference in October 2016, 
+                    which was a fantastic event, bringing together great speakers with the Scottish PHP 
+                    developer community and folk from across Europe.  It was a great event, with to many 
+                    highlights to mention them all, from the opening keynote by Rasmus Lerdorf, the Friday 
+                    night ghost tour, a dozen great talks in 2 streams and a great Saturday evening social.  
+                    The ScotlandPHP conference, as well as the annual ScotlandPHP Christmas social in Dundee 
+                    and great ways of bringing the wider Scottish PHP development community together</p>
+
+                <p>Many members of the group are also active on the ScotlandPHP Slack channel, which allows 
+                    everyone to keep in touch between meetings, and with the wider community.</p>
                 <hr/>
             </div>
         </div>
