@@ -25,9 +25,22 @@ Route::get('/about', function () {
 });
 
 Route::get('/events', function () { 
+
+	$allevents = [
+	    ['sectionname' => 'AberdeenPHP Events',
+	     'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/group/272/events.json'))
+	    ],
+	    ['sectionname' => 'Other Events in Aberdeen',
+	     'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/area/60/events.json'))
+	    ],
+	    ['sectionname' => 'PHP Events in Scotland',
+	     'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
+	    ],
+	];
 	
 	return view('pages.events',['title'=>"Events",
-							     'tagline'=>"What's going on at AberdeenPHP and elsewhere"]); 
+							    'tagline'=>"What's going on at AberdeenPHP and elsewhere",
+							    'allevents'=>$allevents]); 
 });
 
 Route::get('/give-a-talk', function () { 
