@@ -1,6 +1,6 @@
 <?php
 /*
-* This is the index page for the AberdeenPHP website
+* This is the give a talk page for the AberdeenPHP website
 * 
 * part of AberdeenPHP website
 * see https://github.com/AberdeenPHP/site
