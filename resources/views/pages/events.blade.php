@@ -86,6 +86,4 @@ function print_event( $event_obj ) {
         </div>
     </div>
 
-    <hr>
-
 @endsection

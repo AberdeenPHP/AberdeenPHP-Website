@@ -43,7 +43,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="images/aberdeenphp_logo_vsmall.png" alt="AberdeenPHP"/> AberdeenPHP</a>
+                <a class="navbar-brand" href="/"><img src="images/aberdeenphp_logo_vsmall.png" alt="AberdeenPHP"/> AberdeenPHP</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -97,6 +97,9 @@
     </header>
 
     @yield('content')
+
+  
+     <hr>
 
     <!-- Footer -->
     <footer>
@@ -167,15 +170,14 @@
     </footer>
 
     <!-- jQuery -->
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <!-- Theme JavaScript -->
     <script src="js/all.js"></script>
+    
+    @stack('javascriptfrompages')
+
 
 </body>
 
