@@ -7,13 +7,14 @@
 */
 
 
-
-
-
 /*
-* this prints a html header
+* This prints a html header
 * 
-* 
+* @param string $title          Title used in the head->title tag and also laid over the header image. Optional.
+* @param string $tagline        Tagline laid over the header image, below the title. Optional.
+* @param string $image          Image used for the header, a path like "images/mypic.jpg", the images should be pretty wide, like 1600x400.  If not set, a random image is used. Optional. 
+* @param string $description    Description used in the head->description tag. Optional.
+* @param string $keywords       Keywords used in the head->keywords tag. Optional.
 */
 function print_header ( $title="", $tagline="", $image="", $description = "", $keywords = "") {
 
@@ -45,9 +46,7 @@ function print_header ( $title="", $tagline="", $image="", $description = "", $k
 
     echo '<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,37 +54,28 @@ function print_header ( $title="", $tagline="", $image="", $description = "", $k
     <meta name="author" content="Aberdeen PHP">
     <meta name="keywords" content="' . $keywords . '">
     <meta name="generator" content="Some text editor" />
-
     <title>' . $title . ' - Aberdeen PHP User Group</title>
-
-    
     <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png"> 	
-
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Theme CSS -->
     <link href="css/ab_php.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
-
 <body>
 
     <!-- Navigation -->
