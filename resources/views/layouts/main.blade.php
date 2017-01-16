@@ -1,33 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-@php 
 
-   
-   
-    if (!isset($image)) {
-        # if there is no image set, get one from the radnom directory
-        $dir = "./images/random_header_images/";
-        $images = glob($dir . '*.{jpg,jpeg,png}', GLOB_BRACE);
-        shuffle($images);
-        $image = array_pop($images);
-    }     
-           
-    if (!isset($description)) {
-        $description = "Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.";
-    }
-    
-    if (!isset($keywords)) {
-        $keywords = "aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug";
-    }    
-
-@endphp
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $description }}">
+    <meta name="description" content="{{ $description or 'Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.' }}">
     <meta name="author" content="Aberdeen PHP">
-    <meta name="keywords" content="{{ $keywords }}">
+    <meta name="keywords" content="{{ $keywords or 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
     <meta name="generator" content="Some text editor" />
     <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
     <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
@@ -102,7 +82,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url({{ $image }})">
+    <header class="intro-header" style="background-image: url({{ $image or $randomBackgroundImage }})">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
