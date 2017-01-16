@@ -98,9 +98,6 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             </div>            
         </div>  
         
-        
-        
-        
         <div class="row">
             <div class="col-md-4">
                 <p>
@@ -164,30 +161,6 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             </div>            
         </div>          
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <div class="row">
             <div class="col-md-4">
                 <p>
@@ -230,9 +203,6 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             </div>            
         </div>                  
 
-
-        
-        
     </div>
 
     <hr>
