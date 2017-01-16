@@ -5,12 +5,12 @@
 
     # set defaults
     if (!isset($title)) {
-        $title = "Aberdeen PHP - The monthly meetup for Aberdeen&#039;s Developers";
+        $title = "Aberdeen PHP"; // - The monthly meetup for Aberdeen&#039;s Developers";
     }    
     
     
     if (!isset($tagline)) {
-        $tagline = "";
+        $tagline = "The monthly meetup for Aberdeen&#039;s Developers";
     } 
     
     if (!isset($image)) {
