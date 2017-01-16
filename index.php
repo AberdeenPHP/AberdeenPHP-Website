@@ -10,16 +10,6 @@ require_once("includes/common.php");
 
 print_header("Aberdeen PHP", "The heart of Aberdeen's Web development comunity");
 
-/*
-
-
-
-
-col-lg-6 col-lg-offset-2 col-md-10 col-md-offset-1
-
-
-*/
-
 
 
 ?>
@@ -29,8 +19,15 @@ col-lg-6 col-lg-offset-2 col-md-10 col-md-offset-1
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-	            <p>Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.</p>
-                <p>We meet on the first Wednesday of each month and run talks or open conversations around a variety of tech topics; with a focus on PHP development but extending to general development practises.</p>	
+	            <p>Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get 
+	            together and discuss just about anything in and around the PHP Community.</p>
+                <p>We usually meet on the first Wednesday of each month and run talks or open conversations around a variety of tech topics; with a 
+                focus on PHP development but extending to general development practises.</p>
+                <p>We usually meet at FirthRing, who kindly let us use a room, they're at 47-49 Huntly Street, Aberdeen, AB10 1TH.  If 
+                the door is shut, just chap on the window to right of the door.  We usually start at 6:30 and run till about 8:00 or 8:30.</p>
+                <p>We usually have pizza, beer and soft drinks.</p>	
+                <p>The group is a diverse, welcoming, sociable, relaxed, irreverent, informative and fun.</p>	
+                <p>It is probably a good idea to check AberdeenPHP on twitter (see right) a couple of days before the meeting, incase time or venue has changed.</p>	
             </div>
             <div class="col-md-4">
 	            <a 

@@ -39,8 +39,12 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
                     The ScotlandPHP conference, as well as the annual ScotlandPHP Christmas social in Dundee 
                     and great ways of bringing the wider Scottish PHP development community together</p>
 
-                <p>Many members of the group are also active on the ScotlandPHP Slack channel, which allows 
-                    everyone to keep in touch between meetings, and with the wider community.</p>
+                <p>Many members of the group are also active on the <a href="https://scotlandphp.slack.com" target="_blank">
+                    ScotlandPHP Slack channel</a> which allows everyone to keep in touch between meetings, and with 
+                    the wider community.</p>
+                    
+                <p></p>
+                
                 <hr/>
             </div>
         </div>
@@ -62,7 +66,7 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_august_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    Mark McAulay talking about design for developers, August 2015.
+                    Mark talking about design for developers, August 2015.
                 </p> 
             </div>            
             <div class="col-md-4">
@@ -119,7 +123,7 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             <div class="col-md-4">
                 <p>
                     <img src="images/aberdeenphp_meet_designer_august_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
-                    Mark McAulay asking a tricky question at the meeting in August 2015.
+                    Mark asking a tricky question at the meeting in August 2015.
                 </p>             
             </div>
             <div class="col-md-4">
