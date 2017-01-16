@@ -3,16 +3,8 @@
 <head>
 @php 
 
-    # set defaults
-    if (!isset($title)) {
-        $title = "Aberdeen PHP"; // - The monthly meetup for Aberdeen&#039;s Developers";
-    }    
-    
-    
-    if (!isset($tagline)) {
-        $tagline = "The monthly meetup for Aberdeen&#039;s Developers";
-    } 
-    
+   
+   
     if (!isset($image)) {
         # if there is no image set, get one from the radnom directory
         $dir = "./images/random_header_images/";
@@ -37,7 +29,7 @@
     <meta name="author" content="Aberdeen PHP">
     <meta name="keywords" content="{{ $keywords }}">
     <meta name="generator" content="Some text editor" />
-    <title>{{ $title }} - Aberdeen PHP User Group</title>
+    <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
     <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
@@ -117,7 +109,7 @@
                     <div class="site-heading">
                         <h1>{{ $title }}</h1>
                         <hr class="small">
-                        <span class="subheading">{{ $tagline }}</span>
+                        <span class="subheading">{{ $tagline or "The monthly meetup for Aberdeen's Developers" }}</span>
                     </div>
                 </div>
             </div>
@@ -182,11 +174,11 @@
                         </li>                        
                     </ul>
                     <p class="footerlinks">
-                        <a href="code-of-conduct.php">Code of conduct</a>
+                        <a href="/code-of-conduct">Code of conduct</a>
                         |
-                        <a href="privacy.php">Privacy</a>
+                        <a href="/privacy">Privacy</a>
                         |
-                        <a href="terms.php">Terms and conditions</a>
+                        <a href="/terms">Terms and conditions</a>
                     </p>
                     <p class="copyright text-muted">Copyright &copy; Aberdeen PHP {{ date("Y") }} | Powered by PHP6</p>
                 </div>
