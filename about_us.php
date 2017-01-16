@@ -98,6 +98,96 @@ print_header("About Aberdeen PHP", "What's is all about at AberdeenPHP");
             </div>            
         </div>  
         
+        
+        
+        
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_dave_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Dave Stokes talking about MySQL json date types at ScotlandPHP, October 2016.
+                </p>
+            </div>          
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_erin_october_2016.jpg" alt="tbc" class="img-rounded"><br/>
+                    Erin O'Neil talking about UX at ScotlandPHP, October 2016.
+                </p>
+            </div>            
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_rasmus_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Rasmus Lerdorf talking about PHP7 at ScotlandPHP, October 2016.
+                </p>
+            </div>            
+        </div>          
+        
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_spaceships_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Rasmus on spaceships at ScotlandPHP, October 2016.
+                </p>
+            </div>          
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_usergroups_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Folk buzzing around the user group stand at ScotlandPHP, October 2016.
+                </p>
+            </div>            
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_xmas_social_04_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Robs ace quiz at the ScotlandPHP xmas social, December 2015.
+                </p>
+            </div>            
+        </div>          
+        
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_xmas_social_05_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Us all milling around at the start of the ScotlandPHP xmas social, December 2015.
+                </p>
+            </div>          
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_xmas_social_02_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Thomas sporting an excellent festive jumper at ScotlandPHP xmas social, December 2015.
+                </p>
+            </div>            
+            <div class="col-md-4">
+                <p>
+                    <img src="images/scotlandphp_xmas_social_01_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                    Just getting started at the ScotlandPHP xmas social, December 2015.
+                </p>
+            </div>            
+        </div>          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <div class="row">
             <div class="col-md-4">
                 <p>
