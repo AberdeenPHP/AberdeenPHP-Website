@@ -162,6 +162,8 @@
                         <a href="/privacy">Privacy</a>
                         |
                         <a href="/terms">Website T's &amp; C's</a>
+                        |
+                        <a href="/cookies">Cookies</a>
                     </p>
                     <p class="copyright text-muted">Copyright &copy; Aberdeen PHP {{ date("Y") }} | Powered by PHP6</p>
                 </div>

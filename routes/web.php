@@ -85,6 +85,12 @@ Route::get('/terms', function () {
 							     'tagline'=>"Just Some Legal Stuff About This Website"]); 
 });
 
+Route::get('/cookies', function () { 
+	
+	return view('pages.cookies',['title'=>"Aberdeen PHP",
+							     'tagline'=>"How Cookies Are Used On This Website"]); 
+});
+
 
 
 
