@@ -19,9 +19,9 @@ In the `.env` you'll see the `APP_KEY` is blank. You need to get a value in that
 
 
 ## Editing a page
-If you are not familiar with Laravel it can be a little confusing at first.
-Chances are the html you need to change will be in `/resources/views/pages/`.
-If its not there have a look at the Creating A New Page section just below. It runs through the key file locations and should help you find your way around.
+If you are not familiar with Laravel it can be a little confusing and over complex at first.
+Chances are the html you need to change will be found in `/resources/views/pages/`.
+If its not there have a look at the *Creating A New Page* section just below. It runs through the key file locations and should help you find your way around.
 
 ## Creating a new page 
 
@@ -98,4 +98,4 @@ If you are a little more familiar with Laravel here's some notes:
 * I includes Font Awsome 4.6.3, so you can use all the font icons and stuff at http://fontawesome.io/icons/
 * It was based on the template at https://github.com/BlackrockDigital/startbootstrap-clean-blog 
 * Laravel Docs are here https://laravel.com/docs/5.3
-* If you want to learn Laravel - there is no better place to start than [right here](https://laracasts.com/)
+* If you want to learn Laravel - there is no better place to start than [right here](https://laracasts.com/).
