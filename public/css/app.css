@@ -23,7 +23,7 @@ footer .copyright, footer .footerlinks {
 }
 
 body {
-  font-family: Lora,'Times New Roman',serif;
+  font-family: Lora, 'Times New Roman', serif;
   font-size: 20px;
   -webkit-tap-highlight-color: #0085A1;
 }
@@ -89,6 +89,13 @@ hr.small {
 
 img {
   max-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse,
+  .navbar-header {
+    background: white;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -199,7 +206,7 @@ img {
 }
 
 .intro-header .post-heading .meta {
-  font-family: Lora,'Times New Roman',serif;
+  font-family: Lora, 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
@@ -277,14 +284,14 @@ img {
 }
 
 .btn {
-  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
 }
 
 .pager li > a, .pager li > span {
-  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
@@ -345,7 +352,7 @@ footer .copyright {
   line-height: 1.764705882em;
   vertical-align: baseline;
   opacity: 0;
-  -webkit-transition: top .3s ease,opacity .3s ease;
+  -webkit-transition: top .3s ease, opacity .3s ease;
   /* is this even a thing? */
   -webkit-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
