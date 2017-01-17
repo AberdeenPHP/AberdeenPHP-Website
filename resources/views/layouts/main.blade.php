@@ -43,7 +43,11 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/"><img src="images/aberdeenphp_logo_vsmall.png" alt="AberdeenPHP"/> AberdeenPHP</a>
+                <a class="navbar-brand" href="/">
+                    <img src="images/elephpant_logo.128.png" alt="Our Sheepephpant Logo">
+                    {{--<img src="images/elephpant_high_128x75.png" alt="Our Sheepephpant Logo">--}}
+                    {{--<img src="images/aberdeen_php_high.256.png" alt="Aberdeen PHP">--}}
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,7 +91,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>{{ $title }}</h1>
+                        <h1>{!! $title !!}</h1>
                         <hr class="small">
                         <span class="subheading">{{ $tagline or "The monthly meetup for Aberdeen's Developers" }}</span>
                     </div>
@@ -179,8 +183,6 @@
     <script src="js/all.js"></script>
     
     @stack('javascriptfrompages')
-
-
 </body>
 
 </html>
