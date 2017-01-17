@@ -14,14 +14,14 @@
 Route::get('/', function () { 
 
 	return view('pages.homepage',['title'=>"Aberdeen PHP",
-								   'tagline'=>"The heart of Aberdeen's Web development comunity"]); 
+								   'tagline'=>"The heart of Aberdeen's Web development community"]); 
 
 });
 
 Route::get('/about', function () { 
 	
 	return view('pages.about',['title'=>'About Aberdeen PHP',
-							     'tagline'=>"What's is all about at AberdeenPHP"]); 
+							     'tagline'=>"What exactly is AberdeenPHP?"]); 
 });
 
 Route::get('/events', function () { 
@@ -39,20 +39,20 @@ Route::get('/events', function () {
 	];
 	
 	return view('pages.events',['title'=>"Events",
-							    'tagline'=>"What's going on at AberdeenPHP and elsewhere",
+							    'tagline'=>"What's going on at AberdeenPHP and Elsewhere",
 							    'allevents'=>$allevents]); 
 });
 
 Route::get('/give-a-talk', function () { 
 	
-	return view('pages.talk',['title'=>"Give a talk",
-							     'tagline'=>"Come and give a talk, join in and share what you know."]); 
+	return view('pages.talk',['title'=>"Give A Talk",
+							     'tagline'=>"Come and give a talk, share what you knowledge, help us grow."]); 
 });
 
 Route::get('/sponsorship', function () { 
 	
 	return view('pages.sponsor',['title'=>"Sponsor Us",
-							     'tagline'=>"Get involved and help"]); 
+							     'tagline'=>"Advertise directly to your potential users"]); 
 });
 
 Route::get('/community', function () { 
@@ -64,25 +64,25 @@ Route::get('/community', function () {
 Route::get('/contact', function () { 
 	
 	return view('pages.contact',['title'=>"Get in touch",
-							     'tagline'=>"Some legal stuff"]); 
+							     'tagline'=>"Aberdeen PHP Contact Details"]); 
 });
 
 Route::get('/code-of-conduct', function () { 
 	
 	return view('pages.codeofconduct',['title'=>"Aberdeen PHP",
-							     'tagline'=>"Code of conduct - be awesome to evaryone"]); 
+							     'tagline'=>"Code Of Conduct - Be Awesome to Everyone!"]); 
 });
 
 Route::get('/privacy', function () { 
 	
 	return view('pages.privacy',['title'=>"Aberdeen PHP",
-							     'tagline'=>"Some legal stuff"]); 
+							     'tagline'=>"Our Website Privacy Policy"]); 
 });
 
 Route::get('/terms', function () { 
 	
 	return view('pages.terms',['title'=>"Aberdeen PHP",
-							     'tagline'=>"Some legal stuff"]); 
+							     'tagline'=>"Just Some Legal Stuff About This Website"]); 
 });
 
 

@@ -65,7 +65,7 @@
                         <a href="/sponsorship">Sponsorship</a>
                     </li>
                     <li>
-                        <a href="https://news.aberdeenphp.co.uk" target="_blank">News</a>
+                        <a href="https://news.aberdeenphp.co.uk" target="_blank">News <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </li>                      
                     <li>
                         <a href="/community">Community</a>
@@ -85,7 +85,7 @@
     <header class="intro-header" style="background-image: url({{ $image or $randomBackgroundImage }})">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1">
                     <div class="site-heading">
                         <h1>{{ $title }}</h1>
                         <hr class="small">
