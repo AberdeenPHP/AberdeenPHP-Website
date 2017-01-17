@@ -71,7 +71,7 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-custom .navbar-header .navbar-toggle {
@@ -169,7 +169,7 @@ img {
 }
 
 .site-heading {
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .intro-header .page-heading h1, .intro-header .site-heading h1 {
@@ -347,10 +347,10 @@ footer .copyright {
   margin: 0;
   font-size: .85em;
   line-height: 1.764705882em;
-  vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
   -webkit-transition: top .3s ease,opacity .3s ease;
+  /* is this even a thing? */
   -webkit-transition: top 0.3s ease, opacity 0.3s ease;
   transition: top 0.3s ease, opacity 0.3s ease;
 }

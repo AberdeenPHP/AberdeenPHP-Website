@@ -81,7 +81,7 @@ hr.small {
   left: 0;
   width: 100%;
   z-index: 3;
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   .navbar-header .navbar-toggle {
     color: #777;
     font-weight: 800;
@@ -183,7 +183,7 @@ img {
 }
 
 .site-heading {
-  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .intro-header {
@@ -358,12 +358,11 @@ footer {
     margin: 0;
     font-size: .85em;
     line-height: 1.764705882em;
-    vertical-align: middle;
     vertical-align: baseline;
     opacity: 0;
     -webkit-transition: top .3s ease,opacity .3s ease;
     -moz-transition: top .3s ease,opacity .3s ease;
-    -ms-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease; /* is this even a thing? */
     transition: top 0.3s ease, opacity 0.3s ease;
   }
   &:not(:first-child) {
