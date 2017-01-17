@@ -1,0 +1,6 @@
+nav {
+	 &:not(.is-visible) { 
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0));
+		border: none;
+	}
+}
