@@ -46,7 +46,7 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="/">
-                    <img src="images/elephpant_logo.128.png" alt="Our Sheepephpant Logo" class="hidden-xs">
+                    <img src="images/elephpant_logo.128.png" alt="Our Sheepephpant Logo" class="hidden-xs hidden-sm">
                     {{--<img src="images/elephpant_high_128x75.png" alt="Our Sheepephpant Logo">--}}
                     {{--<img src="images/aberdeen_php_high.256.png" alt="Aberdeen PHP">--}}
                 </a>
