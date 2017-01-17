@@ -10,8 +10,10 @@
     <meta name="keywords" content="{{ $keywords or 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
     <meta name="generator" content="Some text editor" />
     <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
-    <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
-    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
+    {{--<link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> --}}
+    {{--<link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">--}}
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
@@ -91,7 +93,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>{!! $title !!}</h1>
+                        <h1>{!! $imgtitle or $title !!}</h1>
                         <hr class="small">
                         <span class="subheading">{{ $tagline or "The monthly meetup for Aberdeen's Developers" }}</span>
                     </div>
