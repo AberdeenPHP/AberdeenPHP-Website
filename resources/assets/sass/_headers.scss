@@ -1,0 +1,15 @@
+nav {
+	 &:not(.is-visible) { 
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0.28), rgba(0, 0, 0, 0));
+		border: none;
+	}
+}
+
+.site-heading {
+
+	text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+	
+	.subheading {
+		text-shadow: 1px 1px 6px black;
+	}
+}
