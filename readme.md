@@ -15,7 +15,7 @@ Once the code is downloaded and in the right place run `composer install` to fil
 
 Almost there - second to last step rename the `.env.example` to just `.env`.
 
-In the `.env` you'll see the `APP_KEY` is blank. You need to get a value in that and the easiest way is to run `php artisan key:generate` from the command line. Get in touch if you have any problems!
+In the `.env` you'll see the `APP_KEY` is blank. You need to get a value in that and the easiest way is to run `php artisan key:generate` from the command line, which generates a key and puts it in the `.env` file. If you get a PHP error or a blank screen, check your file permissions, as it needs relevant permissions to write log files. Get in touch if you have any problems!
 
 
 ## Editing a page
