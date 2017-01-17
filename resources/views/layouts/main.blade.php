@@ -157,11 +157,11 @@
                         </li>                        
                     </ul>
                     <p class="footerlinks">
-                        <a href="/code-of-conduct">Code of conduct</a>
+                        <a href="/code-of-conduct">Code of Conduct</a>
                         |
                         <a href="/privacy">Privacy</a>
                         |
-                        <a href="/terms">Terms and conditions</a>
+                        <a href="/terms">Website T's &amp; C's</a>
                     </p>
                     <p class="copyright text-muted">Copyright &copy; Aberdeen PHP {{ date("Y") }} | Powered by PHP6</p>
                 </div>

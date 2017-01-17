@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::get('/about', function () { 
 	
 	return view('pages.about',['title'=>'About Aberdeen PHP',
-							     'tagline'=>"What exactly is AberdeenPHP?"]); 
+							     'tagline'=>"What exactly is Aberdeen PHP?"]); 
 });
 
 Route::get('/events', function () { 
@@ -46,7 +46,7 @@ Route::get('/events', function () {
 Route::get('/give-a-talk', function () { 
 	
 	return view('pages.talk',['title'=>"Give A Talk",
-							     'tagline'=>"Come and give a talk, share what you knowledge, help us grow."]); 
+							     'tagline'=>"Come and give a talk, share your knowledge, help us grow."]); 
 });
 
 Route::get('/sponsorship', function () { 
