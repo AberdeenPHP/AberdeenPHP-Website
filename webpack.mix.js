@@ -11,5 +11,9 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+//to do - stop having to use this false thing
+mix.options({ processCssUrls: false })
+   .js('resources/assets/js/theme.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css')
+   .sourceMaps()
+   .version();
