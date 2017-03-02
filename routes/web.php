@@ -90,10 +90,3 @@ Route::get('/cookies', function () {
 	return view('pages.cookies',['title'=>"Aberdeen PHP",
 							     'tagline'=>"How Cookies Are Used On This Website"]); 
 });
-
-
-
-
-
-
-
