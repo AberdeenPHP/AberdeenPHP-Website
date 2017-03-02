@@ -93,6 +93,9 @@ hr.small {
     font-size: 12px;
     letter-spacing: 1px;
   }
+  .navbar-brand {
+    color: #fff;
+  }
 }
 
 .navbar-brand > img {
@@ -108,7 +111,6 @@ img {
     background: 0 0;
     border-bottom: 1px solid transparent;
     .navbar-brand {
-      color: #fff;
       padding: 20px;
       &:focus, &:hover {
         color: rgba(255, 255, 255, 0.8);
@@ -166,6 +168,15 @@ img {
       -o-transform: translate3d(0, 100%, 0);
       transform: translate3d(0, 100%, 0);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-fixed-bottom.navbar-collapse {
+    &.in {
+      max-height: initial;
+    }
+    background: rgba(0, 0, 0, 0.7);
   }
 }
 
