@@ -13,9 +13,7 @@
             
             <h2>Sponsors</h2>
             <a href="http://www.fifthring.com/" target="_blank"><img src="images/fifthring.png"></a> 
-            <a href="https://www.jetbrains.com" target="_blank"><img src="images/jetbrains.png"></a> 
-            <a href="https://larajobs.com/" target="_blank"><img src="images/larajobs.jpg"></a> 
-    
+            <a href="https://www.jetbrains.com" target="_blank"><img src="images/jetbrains.png"></a>
             
         </div>
     </div>
