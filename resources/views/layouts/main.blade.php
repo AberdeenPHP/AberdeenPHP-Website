@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>{{ $title }}</h1>
+                        <h1>{{ $title or 'Aberdeen PHP' }}</h1>
                         <hr class="small">
                         <span class="subheading">{{ $tagline or "The monthly meetup for Aberdeen's Developers" }}</span>
                     </div>
