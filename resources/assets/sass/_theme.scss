@@ -172,11 +172,11 @@ img {
 }
 
 @media (max-width: 768px) {
-  .navbar-fixed-bottom.navbar-collapse {
+  .navbar-default .navbar-collapse {
     &.in {
       max-height: initial;
     }
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 255, 255, 0.95);
   }
 }
 

@@ -87,6 +87,10 @@ hr.small {
   letter-spacing: 1px;
 }
 
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+
 .navbar-brand > img {
   display: inline-block;
 }
@@ -101,7 +105,6 @@ img {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: #fff;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:hover {
@@ -153,6 +156,15 @@ img {
   .navbar-custom.is-visible {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-default .navbar-collapse {
+    background: rgba(255, 255, 255, 0.95);
+  }
+  .navbar-default .navbar-collapse.in {
+    max-height: initial;
   }
 }
 
