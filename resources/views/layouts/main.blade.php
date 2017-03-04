@@ -36,7 +36,7 @@
     <meta property="og:url"                content="{{ Request::url() }}" />
     <meta property="og:type"               content="website" />
     <meta property="og:title"              content="{{ $title or '' }} - Aberdeen PHP User Group" />
-    <meta property="og:image"              content="https://aberdeenphp.co.uk/images/aberdeenphp_logo.png" />
+    <meta property="og:image"              content="https://aberdeenphp.co.uk/images/for_facebook/share_image_1.jpg" />
     <meta property="og:description"        content="Aberdeen PHP User is a regular meeting for developers in Aberdeen and the surrounding areas to discuss just about anything in and around the PHP Community">
     
 </head>
