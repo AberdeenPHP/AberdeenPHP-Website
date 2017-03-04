@@ -9,6 +9,8 @@
     <meta name="author" content="Aberdeen PHP">
     <meta name="keywords" content="{{ $keywords or 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
     <meta name="generator" content="Some text editor" />
+    <meta name="msvalidate.01" content="08CCB8004B0AB85022A49662B898CA1C" />
+    <meta name="google-site-verification" content="24vvvmBhpQ5J9fP088rOmKxuYL6qDaKPvczOA3p5CkI" />
     <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
     <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
