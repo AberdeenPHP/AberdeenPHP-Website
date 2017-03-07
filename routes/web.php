@@ -68,6 +68,8 @@ Route::get('/contact', function () {
 							     'tagline'=>"Aberdeen PHP Contact Details"]); 
 });
 
+Route::post('/contact',['as'=>'contactform','uses'=>'ContactFormController@store']); 
+
 Route::get('/code-of-conduct', function () { 
 	
 	return view('pages.codeofconduct',['title'=>"Aberdeen PHP",

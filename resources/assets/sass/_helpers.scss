@@ -1,0 +1,146 @@
+// From:
+// https://gist.githubusercontent.com/hinok/ccffc8c2408e3a119d75/raw/4585e97d8c50bbcf4b2d808115f3f5be06a1a612/SassMeister-input.scss
+// ----
+// libsass (v3.0.2)
+// ----
+
+//
+// From less to sass.
+// Ported version of Responsive Margin & Padding Shortcuts 
+// for Twitter Bootstrap 3.0
+//---------------------------------------------------------------
+//
+// Responsive Margin & Padding Shortcuts for Twitter Bootstrap 3.0
+// ---------------------------------------------------------------
+// This is an addition to Twitter Bootstrap that allows additional margin and padding shortcuts
+// for enhanced layout control purposes. It should be included after the bootstrap.less
+// import statement or precompiled as you see fit. It differs from bootstrap standards in
+// that for any given screen size it predetermines the margin/padding size. All you have to
+// do is specify the size you want xs,sm,md,lg, or xl. The exception is for items that you
+// want to be centered using auto left/right margins. This can be device responsive by
+// specifying mc-xs, mc-sm, mc-md, or mc-lg depending on when you want that behavior.
+
+// these are the base sizes
+// adjust to your preference
+// ---------------------------------------------------------------
+$margin-xs:   5px;
+$margin-sm:  10px;
+$margin-md:  15px;
+$margin-lg:  30px;
+$margin-xl:  50px;
+
+// these are the scale values for each device size
+// adjust to your preference
+// ---------------------------------------------------------------
+$margin-scale-xs: 0.75;
+$margin-scale-sm: 0.75;
+$margin-scale-md: 1;
+$margin-scale-lg: 1.5;
+
+// Defined breakpoints
+// ---------------------------------------------------------------
+
+$screen-xs: 480px;
+$screen-xs-min: 480px;
+
+$screen-sm: 768px;
+$screen-sm-min: 768px;
+
+$screen-md: 992px;
+$screen-md-min: 992px;
+
+$screen-lg: 1200px;
+$screen-lg-min: 1200px;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+
+// Mixin
+// ---------------------------------------------------------------
+@mixin responsive-margin-padding($scale) {
+  
+  $sizes: (
+    xs: $margin-xs,
+    sm: $margin-sm,
+    md: $margin-md,
+    lg: $margin-lg,
+    xl: $margin-xl
+  );
+  
+  $props: (
+    m: margin,
+    p: padding
+  );
+  
+  $directions: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left
+  );
+  
+  @each $prop-short, $prop in $props {
+    @each $size-short, $size in $sizes {
+      @each $direction-short, $direction in $directions {
+        .#{$prop-short}#{$direction-short}-#{$size-short} {
+          #{$prop}-#{$direction}: round($size * $scale);
+        }
+      }
+    }
+  }
+}
+
+
+// ** you shouldnt need to change anything below this point **
+// ---------------------------------------------------------------
+
+// these are the device-agnostic resets and centering
+.mc   {   margin-left: auto;
+         margin-right: auto; }
+.mt-0 {    margin-top: 0; }
+.mr-0 {  margin-right: 0; }
+.mb-0 { margin-bottom: 0; }
+.ml-0 {   margin-left: 0; }
+.pt-0 {   padding-top: 0; }
+.pr-0 { padding-right: 0; }
+.pb-0 {padding-bottom: 0; }
+.pl-0 {  padding-left: 0; }
+
+// what follows are all the different device size adjustments
+@media (max-width: #{$screen-xs-max}) {
+  .mc-sm {  
+    margin-right: auto;
+    margin-left: auto; 
+  }
+
+  @include responsive-margin-padding($margin-scale-xs);
+}
+
+@media (min-width: #{$screen-sm}) and (max-width: #{$screen-sm-max}) {
+  .mc-md {  
+    margin-right: auto;
+    margin-left: auto; 
+  }
+  
+  @include responsive-margin-padding($margin-scale-sm);
+}
+
+@media (min-width: #{$screen-md}) and (max-width: #{$screen-md-max}) {
+  .mc-lg {  
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include responsive-margin-padding($margin-scale-md);
+}
+
+@media (min-width: #{$screen-lg}) {
+  .mc-xl {
+    margin-right: auto;
+    margin-left: auto; 
+  }
+  
+  @include responsive-margin-padding($margin-scale-lg);
+}
