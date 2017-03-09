@@ -46,21 +46,33 @@ Route::get('/events', function () {
 
 Route::get('/events/aberdeen', function () {
 
+    $allEvents = [
+        ['sectionname' => 'Other Events in Aberdeen',
+            'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/area/60/events.json'))
+        ],
+    ];
+
     return view('pages.events', [
         'title'=>"Other Events in Aberdeen",
         'tagline'=>"What's going on in Aberdeen.",
-        'events'=>json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/area/60/events.json'))
+        'allevents'=> $allEvents
     ]);
-});
+})->name('events.aberdeen');
 
 Route::get('/events/php', function () {
+
+    $allEvents = [
+        ['sectionname' => 'PHP Events in Scotland',
+            'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
+        ],
+    ];
 
     return view('pages.events', [
         'title'=>"PHP Events in Scotland",
         'tagline'=>"What's going on in the PHP Community.",
-        'events'=>json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
+        'allevents'=> $allEvents
     ]);
-});
+})->name('events.php');
 
 Route::get('/give-a-talk', function () { 
 	
