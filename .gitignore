@@ -56,3 +56,6 @@ node_modules/
 # composer.lock
 
 # IGNORE DANNY'S DOCKER STUFF
+containers
+Makefile
+docker-compose.yml
