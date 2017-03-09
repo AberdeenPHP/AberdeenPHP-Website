@@ -8,7 +8,7 @@
             
             <h1>Community</h1>
             
-            <p>This page is for info on various related communities and things, if you've any additions or changes just edit <a href="https://github.com/AberdeenPHP/site/blob/master/community.php" target="_blank">this page in github</a>.
+            <p>This page is for info on various related communities and things, if you've any additions or changes you can find our <a href="https://github.com/AberdeenPHP" target="_blank">contribution guide on GitHub</a>.
             
             <hr/>
 
@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="http://techmeetup.co.uk/aberdeen.html" target="_blank">TechMeetup Aberdeen</a>: TechMeetup is a monthly excuse for developers and the tech community around Scotland to meet up and learn new stuff from each other. Also on <a href="https://www.facebook.com/Aberdeen-TechMeetup-220140384757836/" target="_blank">Facebook</a></li>
                 <li><a href="https://57north.org.uk/" target="_blank">57North</a>: Aberdeen's hackspace.</li>
-                <li>
+          
             </ul>
 
             

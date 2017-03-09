@@ -8,7 +8,8 @@
     <meta name="description" content="{{ $description or 'Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.' }}">
     <meta name="author" content="Aberdeen PHP">
     <meta name="keywords" content="{{ $keywords or 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
-    <meta name="generator" content="Some text editor" />
+    <meta name="msvalidate.01" content="08CCB8004B0AB85022A49662B898CA1C" />
+    <meta name="google-site-verification" content="24vvvmBhpQ5J9fP088rOmKxuYL6qDaKPvczOA3p5CkI" />
     <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
     <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
@@ -16,11 +17,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png"> 	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap Core CSS -->
    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Theme CSS -->
-    <link href="css/app.css" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -31,6 +33,12 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <meta property="og:url"                content="{{ Request::url() }}" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="{{ $title or '' }} - Aberdeen PHP User Group" />
+    <meta property="og:image"              content="https://aberdeenphp.co.uk/images/for_facebook/share_image_1.jpg" />
+    <meta property="og:description"        content="Aberdeen PHP User is a regular meeting for developers in Aberdeen and the surrounding areas to discuss just about anything in and around the PHP Community">
+    
 </head>
 <body>
 
@@ -65,7 +73,7 @@
                         <a href="/sponsorship">Sponsorship</a>
                     </li>
                     <li>
-                        <a href="https://news.aberdeenphp.co.uk" target="_blank">News</a>
+                        <a href="https://news.aberdeenphp.co.uk" target="_blank">News <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </li>                      
                     <li>
                         <a href="/community">Community</a>
@@ -82,12 +90,12 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url({{ $image or $randomBackgroundImage }})">
+    <header class="intro-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ $image or $randomBackgroundImage }})">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>{{ $title }}</h1>
+                        <h1>{{ $title or 'Aberdeen PHP' }}</h1>
                         <hr class="small">
                         <span class="subheading">{{ $tagline or "The monthly meetup for Aberdeen's Developers" }}</span>
                     </div>
@@ -157,11 +165,13 @@
                         </li>                        
                     </ul>
                     <p class="footerlinks">
-                        <a href="/code-of-conduct">Code of conduct</a>
+                        <a href="/code-of-conduct">Code of Conduct</a>
                         |
                         <a href="/privacy">Privacy</a>
                         |
-                        <a href="/terms">Terms and conditions</a>
+                        <a href="/terms">Website T's &amp; C's</a>
+                        |
+                        <a href="/cookies">Cookies</a>
                     </p>
                     <p class="copyright text-muted">Copyright &copy; Aberdeen PHP {{ date("Y") }} | Powered by PHP6</p>
                 </div>
@@ -174,10 +184,23 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Theme JavaScript -->
-    <script src="js/all.js"></script>
+    <script src="{{ mix('js/theme.js') }}"></script>
     
     @stack('javascriptfrompages')
 
+    @if(App::environment('production'))
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-61042224-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    @endif
+    
 
 </body>
 

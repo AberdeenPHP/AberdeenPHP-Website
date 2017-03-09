@@ -3,7 +3,7 @@ Website for AberdeenPHP User Group
 
 ## Background
 This is the fourth version of the AberdeenPHP website.  
-The first was, I think a Github pages thing, the second was WordPress, this one uses the Laravel 5.3 framework. 
+The first was, I think a Github pages thing, the second was WordPress, this one uses the Laravel 5.4 framework. 
 
 ## Contributing
 One of the easiest way to contribute is to get a copy of this website working on your computer, make any changes, then create a pull request. 
@@ -17,6 +17,7 @@ Almost there - second to last step rename the `.env.example` to just `.env`.
 
 In the `.env` you'll see the `APP_KEY` is blank. You need to get a value in that and the easiest way is to run `php artisan key:generate` from the command line, which generates a key and puts it in the `.env` file. If you get a PHP error or a blank screen, check your file permissions, as it needs relevant permissions to write log files. Get in touch if you have any problems!
 
+**Note: You may need to add an entry to your `.env` file for bugsnag (the bug monitoring platform). Get in touch if so!**
 
 ## Editing a page
 If you are not familiar with Laravel it can be a little confusing and over complex at first.
@@ -71,17 +72,19 @@ This is where you can add a new page. Remember to make sure the file starts with
 
 If you are familiar with SASS/SCSS this folder will make sense. Its fairly basic. 
 
-To compile the SASS to regular CSS you run `gulp` from the command line.
+To compile the SASS to regular CSS you run `npm run dev` from the command line.
 
-Getting Gulp (and NPM) installed can be a challenging and frustrating experience. In most cases you will only need to run `npm install` or `yarn install` from the root directory of this project and magic will happen. 
+(You can run `npm run production` when you are ready to upload your changes - this reduced the file sizes dramatically)
 
-Its a bit beyond the scope of this guide to go into all that. Have a look at the [Laravel Docs](https://laravel.com/docs/5.3/elixir) or get in touch and we'll help!
+Getting Webpack (and NPM) installed can be a challenging and frustrating experience. In most cases you will only need to run `npm install` from the root directory of this project and magic will happen. 
+
+Its a bit beyond the scope of this guide to go into all that. Have a look at the [Laravel Docs](https://laravel.com/docs/5.4/mix) or get in touch and we'll help!
 
 #### JavaScript - [/resources/assets/js/](/resources/assets/js/)
 
-As with the SASS you'll find the the websites JavaScript in this folder. If you are wondering how it gets from here to the `public/js` folder, well that uses gulp too.
+As with the SASS you'll find the the websites JavaScript in this folder. If you are wondering how it gets from here to the `public/js` folder, well that uses webpack too.
 
-In fact - now is a good time to have a look at the [gulpfile.js](/gulpfile.js) and you'll see the code that points to this file.
+In fact - now is a good time to have a look at the [webpack.mix.js](/webpack.mix.js) and you'll see the code that points to this file.
 
 
 #### Other Bits
@@ -91,11 +94,11 @@ If you are a little more familiar with Laravel here's some notes:
 1. There's a `ViewServiceProvider` which injects the background image url into the main layout view.
 2. Yes - there's controller type stuff in the routes file. Keeping things simple here remember!
 3. The views should be broken up into smaller partials but again, keeping it simple.
-4. On the homepage only some JavaScript is loaded for twitter. Its a bit of cheat but a simple [Stack](https://laravel.com/docs/5.3/blade#stacks) has been used here.
+4. On the homepage only some JavaScript is loaded for twitter. Its a bit of cheat but a simple [Stack](https://laravel.com/docs/5.4/blade#stacks) has been used here.
 
 ## Resources
 * It's built using bootstrap 3.3.7, so you can use all the css and components in http://getbootstrap.com/
 * I includes Font Awsome 4.6.3, so you can use all the font icons and stuff at http://fontawesome.io/icons/
 * It was based on the template at https://github.com/BlackrockDigital/startbootstrap-clean-blog 
-* Laravel Docs are here https://laravel.com/docs/5.3
+* Laravel Docs are here https://laravel.com/docs/5.4
 * If you want to learn Laravel - there is no better place to start than [right here](https://laracasts.com/).

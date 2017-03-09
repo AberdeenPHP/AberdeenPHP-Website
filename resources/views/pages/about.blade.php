@@ -6,6 +6,7 @@
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h1>History and background.</h1>
+            <p>PHP is one of the most popular programming languages used by people building websites (and mobile applications).</p>
             <p>Aberdeen PHP user group was started in December 2014 by Danny Wilson and we've been 
                 meeting every first Wednesday of the month since then.  Although formed as a PHP user 
                 group, it really embraces the full gamut of the web.  The group meets over pizza and 
@@ -15,7 +16,7 @@
                 lightning talks, PHP7 and many other things. The group is a  diverse, welcoming, sociable, 
                 relaxed, irreverent, informative and fun.  A couple of times a year, usually December and 
                 July, the meeting will switch to being in the pub for more of a social vibe.  The meetings 
-                often feature Rob's news, a breakdown of PHP, web and tech news from Rob Cooper, which is 
+                often feature PHP news, a breakdown of PHP, web and tech news from Robert Cooper, which is 
                 always excellent.  We also collaborate closely with the other PHP user groups in Scotland, 
                 via the ScotlandPHP umbrella organisation.</p>
 
@@ -26,7 +27,7 @@
                 highlights to mention them all, from the opening keynote by Rasmus Lerdorf, the Friday 
                 night ghost tour, a dozen great talks in 2 streams and a great Saturday evening social.  
                 The ScotlandPHP conference, as well as the annual ScotlandPHP Christmas social in Dundee 
-                and great ways of bringing the wider Scottish PHP development community together</p>
+                and great ways of bringing the wider Scottish PHP development community together.</p>
 
             <p>Many members of the group are also active on the <a href="https://scotlandphp.slack.com" target="_blank">
                 ScotlandPHP Slack channel</a> which allows everyone to keep in touch between meetings, and with 
@@ -40,7 +41,7 @@
 
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h2>Some various photos of AberdeenPHP</h2>
+            <h2>Various Photos of Aberdeen PHP</h2>
             <p>A few photos, in no particular order, of various talks and meet-ups.</p>
         </div>
     </div>
