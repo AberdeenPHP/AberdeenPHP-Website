@@ -31,10 +31,10 @@ Route::get('/events', function () {
 	    ['sectionname' => 'AberdeenPHP Events',
 	     'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/group/272/events.json'))
 	    ],
-	    ['sectionname' => 'Other Events in Aberdeen',
+	    ['sectionname' => 'Other Events In Aberdeen',
 	     'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/area/60/events.json'))
 	    ],
-	    ['sectionname' => 'PHP Events in Scotland',
+	    ['sectionname' => 'PHP Events In Scotland',
 	     'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
 	    ],
 	];
@@ -47,13 +47,13 @@ Route::get('/events', function () {
 Route::get('/events/aberdeen', function () {
 
     $allEvents = [
-        ['sectionname' => 'Other Events in Aberdeen',
+        ['sectionname' => 'Other Events In Aberdeen',
             'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/area/60/events.json'))
         ],
     ];
 
     return view('pages.events', [
-        'title'=>"Other Events in Aberdeen",
+        'title'=>"Other Events In Aberdeen",
         'tagline'=>"What's going on in Aberdeen.",
         'allevents'=> $allEvents
     ]);
@@ -62,15 +62,16 @@ Route::get('/events/aberdeen', function () {
 Route::get('/events/php', function () {
 
     $allEvents = [
-        ['sectionname' => 'PHP Events in Scotland',
+        ['sectionname' => 'PHP Events In Scotland',
             'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
         ],
     ];
 
     return view('pages.events', [
-        'title'=>"PHP Events in Scotland",
+        'title'=>"PHP Events In Scotland",
         'tagline'=>"What's going on in the PHP Community.",
-        'allevents'=> $allEvents
+        'allevents'=> $allEvents,
+        'image'=>'/images/random_header_images/dunnottar-castle_01.jpg'
     ]);
 })->name('events.php');
 
