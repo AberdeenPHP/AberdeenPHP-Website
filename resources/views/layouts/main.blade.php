@@ -11,12 +11,12 @@
     <meta name="msvalidate.01" content="08CCB8004B0AB85022A49662B898CA1C" />
     <meta name="google-site-verification" content="24vvvmBhpQ5J9fP088rOmKxuYL6qDaKPvczOA3p5CkI" />
     <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
-    <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" /> 
-    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png"> 	
+    <link href="images/icons/favicon.ico" rel="shortcut icon" type="{{ url('image/vnd.microsoft.icon') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/icons/favicon.ico') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('images/icons/apple-touch-icon-144-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ url('images/icons/apple-touch-icon-114-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ url('images/icons/apple-touch-icon-72-precomposed.png') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ url('images/icons/apple-touch-icon-57-precomposed.png') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap Core CSS -->
    <!-- Latest compiled and minified CSS -->
@@ -51,7 +51,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/"><img src="images/aberdeenphp_logo_vsmall.png" alt="AberdeenPHP"/> AberdeenPHP</a>
+                <a class="navbar-brand" href="/"><img src="{{ url('images/aberdeenphp_logo_vsmall.png') }}" alt="AberdeenPHP"/> AberdeenPHP</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
