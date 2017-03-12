@@ -20,16 +20,19 @@
           
             </ul>
 
+            <p><a href="{{ route('events.aberdeen') }}" target="_blank">View other tech events in Aberdeen</a></p>
+
             
             <h2>PHP in Scotland and the wider UK</h2>
             <ul>
-                <li><a href="https://www.scotlandphp.co.uk/" target="_blank">ScotlandPHP</a>: The unbrella organisation for Scottish PHP User Groups.</li>
+                <li><a href="https://www.scotlandphp.co.uk/" target="_blank">ScotlandPHP</a>: The umbrella organisation for Scottish PHP User Groups.</li>
                 <li><a href="https://scotlandphp.slack.com" target="_blank">ScotlandPHP Slack</a>: Come and join the chat.</li>
                 <li><a href="http://dundeephp.co.uk/" target="_blank">DundeePHP</a>: Dundee PHP user group.</li>
                 <li><a href="http://www.edpug.co.uk/" target="_blank">EdPUG</a>: Edinburgh PHP user group.</li>
                 <li><a href="http://glasgowphp.co.uk/" target="_blank">GlasgowPHP</a>: Glasgow PHP user group.</li>
-            </ul>              
-            
+            </ul>
+
+            <p><a href="{{ route('events.php') }}" target="_blank">View other PHP events in Scotland</a></p>
             
         </div>
     </div>
