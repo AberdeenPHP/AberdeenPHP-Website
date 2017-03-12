@@ -11,7 +11,7 @@
             <ul class="list-unstyled">
                 <li><a href="https://twitter.com/AberdeenPhp" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter: @AberdeenPHP</a></li>
                 <li><a href="https://www.facebook.com/aberdeenpug/" target="_blank"><i class="fa fa-facebook fa-2x"></i> Facebook: AberdeenPUG</a></li>
-                <li><a href="mailto:info@aberdeenphp.co.uk"><i class="fa fa-envelope fa-2x"></i> Email: info@aberdeenphp.co.uk</a></li>
+                <li><a href="mailto:{{ config('site.contactEmailAddress') }}"><i class="fa fa-envelope fa-2x"></i> Email: {{ config('site.contactEmailAddress') }}</a></li>
             </ul>
         </div>
         <div class="col-md-6">
@@ -22,3 +22,4 @@
 </div>
 
 @endsection
+

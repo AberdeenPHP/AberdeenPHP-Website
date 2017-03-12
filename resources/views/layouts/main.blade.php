@@ -186,8 +186,10 @@
     <!-- Theme JavaScript -->
     <script src="{{ mix('js/theme.js') }}"></script>
     
-    @stack('javascriptfrompages')
-
+    <script>
+        @stack('javascriptfrompages')
+    </script>
+    
     @if(App::environment('production'))
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

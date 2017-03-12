@@ -465,6 +465,14 @@ nav:not(.is-visible) {
   border: none;
 }
 
+.navbar-custom .navbar-header .navbar-toggle, .navbar-brand {
+  color: #eee;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  color: #333;
+}
+
 .site-heading {
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
 }
@@ -477,6 +485,17 @@ nav:not(.is-visible) {
   width: 52px;
   line-height: 2em;
   margin-left: 30px;
+}
+
+.contact .submit-status {
+  color: #529552;
+  background-color: #b9edb9;
+  border-color: #a5dda5;
+  padding: 20px;
+}
+
+.contact .submit-status i {
+  margin-right: 10px;
 }
 
 .mc {
@@ -1023,5 +1042,3 @@ nav:not(.is-visible) {
     padding-left: 75px;
   }
 }
-
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIvY3NzL2FwcC5jMTJmMmZmMjUzMzk2NjM1YWEzOC5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/

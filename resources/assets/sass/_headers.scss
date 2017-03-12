@@ -5,6 +5,12 @@ nav {
 	}
 }
 
+.navbar-custom .navbar-header .navbar-toggle,.navbar-brand  {
+	color: #eee;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	color: #333;
+}
 .site-heading {
 
 	text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
