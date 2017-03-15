@@ -51,7 +51,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="/"><img src="{{ url('images/aberdeenphp_logo_vsmall.png') }}" alt="AberdeenPHP"/> AberdeenPHP</a>
+                <a class="navbar-brand" href="/"><img src="{{ url('images/aberdeenphp_logo.svg') }}" alt="AberdeenPHP" width="40" height="40"/> AberdeenPHP</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
