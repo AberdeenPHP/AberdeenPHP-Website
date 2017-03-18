@@ -492,6 +492,7 @@ nav:not(.is-visible) {
   background-color: #b9edb9;
   border-color: #a5dda5;
   padding: 20px;
+  display: none;
 }
 
 .contact .submit-status i {

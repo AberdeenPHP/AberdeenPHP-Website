@@ -28,8 +28,8 @@
     </div>
 </div>
 
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 @endsection
 
 @push('javascriptfrompages')
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 @endpush
