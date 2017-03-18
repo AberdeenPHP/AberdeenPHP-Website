@@ -15,7 +15,8 @@
 Route::get('/', function () { 
 
 	return view('pages.homepage',['title'=>"Aberdeen PHP",
-								   'tagline'=>"The heart of Aberdeen's Web development community"]); 
+								   'tagline'=>"The heart of Aberdeen's Web development community",
+								   'image'=>'/images/random_header_images/aberdeen_08.jpg']); 
 
 });
 
@@ -76,8 +77,8 @@ Route::get('/events/php', function () {
     return view('pages.events', [
         'title'=>"PHP Events In Scotland",
         'tagline'=>"What's going on in the PHP Community.",
-        'allevents'=> $allEvents,
-        'image'=>'/images/random_header_images/dunnottar-castle_01.jpg'
+        'allevents'=> $allEvents
+       
     ]);
 })->name('events.php');
 
