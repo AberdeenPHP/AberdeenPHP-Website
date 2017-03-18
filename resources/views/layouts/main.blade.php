@@ -173,7 +173,10 @@
                         |
                         <a href="/cookies">Cookies</a>
                     </p>
-                    <p class="copyright text-muted">Copyright &copy; Aberdeen PHP {{ date("Y") }} | Powered by PHP6</p>
+                    <p class="copyright text-muted">
+                        &copy; Aberdeen PHP {{ date("Y") }} |
+                        Images Kindly Provided By <a href="http://notnixon.com/" target="_blank">(notnixon)</a> | 
+                        Powered by PHP6</p>
                 </div>
             </div>
         </div>
