@@ -20,7 +20,7 @@
           
             </ul>
 
-            <p><a href="{{ route('events.aberdeen') }}" target="_blank">View other tech events in Aberdeen</a></p>
+            <p><a href="{{ route('events.aberdeen') }}" >View other tech events in Aberdeen</a></p>
 
             
             <h2>PHP in Scotland and the wider UK</h2>
@@ -32,7 +32,7 @@
                 <li><a href="http://glasgowphp.co.uk/" target="_blank">GlasgowPHP</a>: Glasgow PHP user group.</li>
             </ul>
 
-            <p><a href="{{ route('events.php') }}" target="_blank">View other PHP events in Scotland</a></p>
+            <p><a href="{{ route('events.php') }}" >View other PHP events in Scotland</a></p>
             
         </div>
     </div>
