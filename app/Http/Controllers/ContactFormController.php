@@ -10,6 +10,11 @@ use App\Http\Requests\ContactFormRequest;
 
 class ContactFormController extends Controller
 {
+	public function index() { 
+		
+		return view('pages.contact',['title'=>"Get in touch",
+								     'tagline'=>"Aberdeen PHP Contact Details"]); 
+	}
     
     public function store(ContactFormRequest $request){
 
@@ -18,5 +23,6 @@ class ContactFormController extends Controller
 
         return Redirect::to('/contact?sent=1');
     }
+
 
 }
