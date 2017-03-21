@@ -19,7 +19,7 @@ class ViewServiceProvider extends ServiceProvider
             $dir = "./images/random_header_images/";
             $images = glob($dir . '*.{jpg,jpeg,png}', GLOB_BRACE);
             shuffle($images);
-            $randomBackgroundImage = subtr(array_pop($images),1);
+            $randomBackgroundImage = substr(array_pop($images),1); // strip the relative url (events/aberdeen was broken)
 
             $view->with('randomBackgroundImage', $randomBackgroundImage);
         });
