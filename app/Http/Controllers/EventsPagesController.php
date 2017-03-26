@@ -47,19 +47,21 @@ class EventsPagesController extends Controller
 
 	public function eventsPHP() {
 
+	    
 		$events = Cache::remember('phpevents',15,function() {
 	    
-	    return [
-			        ['sectionname' => 'PHP Events In Scotland',
-			            'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
-			        ],
-			    ];
+	        return [
+				        ['sectionname' => 'PHP Events In Scotland',
+				            'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
+				        ],
+				    ];
 	    });
 	    
+
 	    return view('pages.events', [
 	        'title'=>"PHP Events In Scotland",
 	        'tagline'=>"What's going on in the PHP Community.",
-	        'allevents'=> $events,
+	        'events'=> $events,
 	        'image'=>'/images/random_header_images/dunnottar-castle_01.jpg'
 	    ]);
 
