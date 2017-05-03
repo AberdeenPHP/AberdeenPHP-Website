@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8">
-            <p>Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get 
+            <p>Aberdeen PHP User Group aims to provide regular meetings for developers in Aberdeen and the surrounding areas to get 
             together and discuss just about anything in and around the PHP Community.</p>
             <p>We usually meet on the first Wednesday of each month and run talks or open conversations around a variety of tech topics; with a 
             focus on PHP development but extending to general development practises.</p>
