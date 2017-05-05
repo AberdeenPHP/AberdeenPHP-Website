@@ -98,7 +98,7 @@ If you are a little more familiar with Laravel here's some notes:
 
 ## Resources
 * It's built using bootstrap 3.3.7, so you can use all the css and components in http://getbootstrap.com/
-* I includes Font Awsome 4.6.3, so you can use all the font icons and stuff at http://fontawesome.io/icons/
+* It includes Font Awsome 4.6.3, so you can use all the font icons and stuff at http://fontawesome.io/icons/
 * It was based on the template at https://github.com/BlackrockDigital/startbootstrap-clean-blog 
 * Laravel Docs are here https://laravel.com/docs/5.4
 * If you want to learn Laravel - there is no better place to start than [right here](https://laracasts.com/).
