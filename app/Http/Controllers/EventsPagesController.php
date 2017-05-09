@@ -61,8 +61,7 @@ class EventsPagesController extends Controller
 	    return view('pages.events', [
 	        'title'=>"PHP Events In Scotland",
 	        'tagline'=>"What's going on in the PHP Community.",
-	        'events'=> $events,
-	        'image'=>'/images/random_header_images/dunnottar-castle_01.jpg'
+	        'events'=> $events
 	    ]);
 
 	}
