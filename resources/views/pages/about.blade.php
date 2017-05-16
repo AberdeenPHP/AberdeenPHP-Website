@@ -45,7 +45,44 @@
             <p>A few photos, in no particular order, of various talks and meet-ups.</p>
         </div>
     </div>
+       
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                <img src="images/aberdeenphp_second_birthday_april_2017.jpg" alt="tbc" class="img-rounded"><br/>
+                Here we are raising a glass to toast two years of Aberdeen PHP in April 2017! Danny, the groups founder, taking the photo (we promised to photoshop him in later!)
+            </p>             
+        </div>
+        <div class="col-md-6">
+            <p>
+                <img src="images/aberdeenphp_lunch_at_the_stag_april_2017.jpg" alt="tbc" class="img-rounded"><br/>
+                Celebrating our second birthday we have now expanded to a second monthly event. We are meeting for an informal pub lunch on the 3rd Wednesday of the month.
+            </p> 
+        </div>            
+       
+    </div>       
             
+    <div class="row">
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_david_mackay_talking_productivity_march2017.jpg" alt="tbc" class="img-rounded"><br/>
+                Rawkode himself (David Mackay) talked all things productivity in March 2017 with run through of productivity tricks and life hacks.
+            </p>             
+        </div>
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_scott_graham_talking_local_trends_feb_2017.jpg" alt="tbc" class="img-rounded"><br/>
+                Scott Graham joined gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
+            </p> 
+        </div>            
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_opensource_may_2017.jpg" alt="tbc" class="img-rounded"><br/>
+                May 2017 was all about showing off some easy ways to get involved with open source software.
+            </p>             
+        </div>          
+    </div>       
+
     <div class="row">
         <div class="col-md-4">
             <p>
