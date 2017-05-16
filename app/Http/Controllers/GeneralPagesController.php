@@ -10,7 +10,7 @@ class GeneralPagesController extends Controller
 	public function home(){
 
 		return view('pages.homepage',['title'=>"Aberdeen PHP",
-									  'tagline'=>"The heart of Aberdeen's Web development community",
+									  'tagline'=>"The heart of Aberdeen's web development community",
 									  'image'=>'/images/random_header_images/aberdeen_08.jpg']); 
 	}
 

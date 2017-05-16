@@ -45,23 +45,60 @@
             <p>A few photos, in no particular order, of various talks and meet-ups.</p>
         </div>
     </div>
+       
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                <img src="images/aberdeenphp_second_birthday_april_2017.jpg" alt="Second Birthday Photo (AberdeenPHP)" class="img-rounded"><br/>
+                Here we are raising a glass to toast two years of Aberdeen PHP in April 2017! Danny, the groups founder, taking the photo (we promised to photoshop him in later!)
+            </p>             
+        </div>
+        <div class="col-md-6">
+            <p>
+                <img src="images/aberdeenphp_lunch_at_the_stag_april_2017.jpg" alt="Pub Lunch Photo (AberdeenPHP)" class="img-rounded"><br/>
+                Celebrating our second birthday we have now expanded to a second monthly event. We are meeting for an informal pub lunch on the 3rd Wednesday of the month.
+            </p> 
+        </div>            
+       
+    </div>       
             
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_rasmus_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_david_mackay_talking_productivity_march2017.jpg" alt="David Mackay (AberdeenPHP)" class="img-rounded"><br/>
+                Rawkode himself (David Mackay) talked all things productivity in March 2017 with run through of productivity tricks and life hacks.
+            </p>             
+        </div>
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_scott_graham_talking_local_trends_feb_2017.jpg" alt="Scott Graham (AberdeenPHP)" class="img-rounded"><br/>
+                Scott Graham joined gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
+            </p> 
+        </div>            
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_opensource_may_2017.jpg" alt="Talking Opensource (AberdeenPHP)" class="img-rounded"><br/>
+                May 2017 was all about showing off some easy ways to get involved with open source software.
+            </p>             
+        </div>          
+    </div>       
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_rasmus_2016_small.jpg" alt="Rasmus Lerdorf (Scotland PHP)" class="img-rounded"><br/>
                 Some members of the group with Rasmus Lerdorf, creator of PHP, at the Scotland PHP conference in Edinburgh, October 2016.
             </p>             
         </div>
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_august_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_august_2015_small.jpg" alt="Mark McAulay (AberdeenPHP)" class="img-rounded"><br/>
                 Mark talking about design for developers, August 2015.
             </p> 
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_polybag_raffle_october_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_polybag_raffle_october_2015_small.jpg" alt="Raffle Time (AberdeenPHP)" class="img-rounded"><br/>
                 We have raffles sometimes, and sometimes we use a polybag :)
             </p>             
         </div>          
@@ -70,19 +107,19 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_november_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_november_2016_small.jpg" alt="Post Scotland PHP Meetup (AberdeenPHP)" class="img-rounded"><br/>
                 The first meetup after the ScotlandPHP conference, with a few folk sporting their new t-shirts, November 2016.                
             </p>             
         </div>
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_june_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_june_2016_small.jpg" alt="Danny talking code Katas (AberdeenPHP)" class="img-rounded"><br/>
                 Danny talking about code Katas, June 2016.
             </p> 
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_febuary_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_febuary_2015_small.jpg" alt="Andy talking Joomla (AberdeenPHP)" class="img-rounded"><br/>
                 Andy talking about Joomla, February 2015.
             </p> 
         </div>            
@@ -91,19 +128,19 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_dave_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_dave_october_2016_small.jpg" alt="Dave Stokes (Scotland PHP)" class="img-rounded"><br/>
                 Dave Stokes talking about MySQL json date types at ScotlandPHP, October 2016.
             </p>
         </div>          
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_erin_october_2016.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_erin_october_2016.jpg" alt="Erin O'Neil (Scotland PHP)" class="img-rounded"><br/>
                 Erin O'Neil talking about UX at ScotlandPHP, October 2016.
             </p>
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_rasmus_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_rasmus_october_2016_small.jpg" alt="Rasmus Lerdorf (Scotland PHP)" class="img-rounded"><br/>
                 Rasmus Lerdorf talking about PHP7 at ScotlandPHP, October 2016.
             </p>
         </div>            
@@ -112,19 +149,19 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_spaceships_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_spaceships_october_2016_small.jpg" alt="Rasmus Lerdorf (Scotland PHP)" class="img-rounded"><br/>
                 Rasmus on spaceships at ScotlandPHP, October 2016.
             </p>
         </div>          
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_usergroups_october_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_usergroups_october_2016_small.jpg" alt="Scotland PHP" class="img-rounded"><br/>
                 Folk buzzing around the user group stand at ScotlandPHP, October 2016.
             </p>
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_xmas_social_04_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_xmas_social_04_december_2015_small.jpg" alt="Robs doing a pub-quiz (Scotland PHP)" class="img-rounded"><br/>
                 Robs ace quiz at the ScotlandPHP xmas social, December 2015.
             </p>
         </div>            
@@ -133,19 +170,19 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_xmas_social_05_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_xmas_social_05_december_2015_small.jpg" alt="Christmas Social (Scotland PHP)" class="img-rounded"><br/>
                 Us all milling around at the start of the ScotlandPHP xmas social, December 2015.
             </p>
         </div>          
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_xmas_social_02_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_xmas_social_02_december_2015_small.jpg" alt="Thomas at the Christmas Social (Scotland PHP)" class="img-rounded"><br/>
                 Thomas sporting an excellent festive jumper at ScotlandPHP xmas social, December 2015.
             </p>
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/scotlandphp_xmas_social_01_december_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/scotlandphp_xmas_social_01_december_2015_small.jpg" alt="The Christmas Social (Scotland PHP)" class="img-rounded"><br/>
                 Just getting started at the ScotlandPHP xmas social, December 2015.
             </p>
         </div>            
@@ -154,19 +191,19 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_continousphp_september_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_continousphp_september_2015_small.jpg" alt="Talking Continuous Integration (AberdeenPHP)" class="img-rounded"><br/>
                 A talk about continuous integration, September 2015.
             </p> 
         </div>          
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_september_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_september_2015_small.jpg" alt="Talking Continuous Integration (AberdeenPHP)" class="img-rounded"><br/>
                 Continuous integration is a popular topic at the group, September 2015.
             </p> 
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_birthday_cake_april_2016_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_birthday_cake_april_2016_small.jpg" alt="First Birthday Celebrations (AberdeenPHP)" class="img-rounded"><br/>
                 On the group's first birthday, in April 2016, we had a cake.
             </p>
         </div>            
@@ -175,19 +212,19 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_designer_august_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_designer_august_2015_small.jpg" alt="Mark McAulay (AberdeenPHP)" class="img-rounded"><br/>
                 Mark asking a tricky question at the meeting in August 2015.
             </p>             
         </div>
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_stickers_october_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_stickers_october_2015_small.jpg" alt="Stickers! (AberdeenPHP)" class="img-rounded"><br/>
                 Sometimes we have stickers, as is the techy way.
             </p> 
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_thomas_cat_october_2015_small.jpg" alt="tbc" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_meet_thomas_cat_october_2015_small.jpg" alt="Thomas Talks Cats! (AberdeenPHP)" class="img-rounded"><br/>
                 Thomas doing a talk in October 2015, always to to get kittens into your talk.
             </p> 
         </div>            
