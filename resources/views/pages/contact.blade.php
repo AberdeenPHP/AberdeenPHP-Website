@@ -6,8 +6,7 @@
     <h2 class="text-center">Contact Us</h2>
     <div class="row">
         <div class="col-md-6">
-            <p>Get in touch with us anytime.</p>
-            <p>You can use the form here or any of these methods:<br>
+            <p>Get in touch with us anytime:</p>
             <ul class="list-unstyled">
                 <li><a href="https://twitter.com/AberdeenPhp" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter: @AberdeenPHP</a></li>
                 <li><a href="https://www.facebook.com/aberdeenpug/" target="_blank"><i class="fa fa-facebook fa-2x"></i> Facebook: AberdeenPUG</a></li>

@@ -17,4 +17,15 @@
 				margin-right: 10px;
 			}
 	}
+	.btn {
+		border-radius: 5px;
+		background-color: #9ab1ff;
+		&:hover {
+			background-color: darken(#9ab1ff,5);
+		}
+	}
+	form a {
+		text-decoration: underline;
+
+	}
 }

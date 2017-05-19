@@ -19,7 +19,7 @@
 			<textarea name="message" required="required" id="message" class="form-control" >{{ old('message') }}</textarea>
 		</div>
 		<input type="submit" value="Send Message" class="btn"><Br>
-		<small>* Your details will never be shared.</small>
+		<small>* Your details will <a href="/privacy">never be shared</a>.</small>
 	</form>
 
 </div>
