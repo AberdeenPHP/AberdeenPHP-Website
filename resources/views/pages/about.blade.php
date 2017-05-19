@@ -2,29 +2,34 @@
 
 @section('content')
 
-<div class="container">
+<div class="container about">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h1>History and background.</h1>
-            <p>PHP is one of the most popular programming languages used by people building websites (and mobile applications).</p>
-            <p>Aberdeen PHP user group was started in December 2014 by Danny Wilson and we've been 
+            <h1>History and Background</h1>
+            <p>PHP (<a href="http://php.net/manual/en/intro-whatcando.php">Hypertext Preprocessor</a>) is one of the most popular programming languages used by people building websites (and mobile applications).</p>
+            <p>Aberdeen PHP user group was started in December 2014 by <a href="http://iamdannywilson.com/">Danny Wilson</a> and we've been 
                 meeting every first Wednesday of the month since then.  Although formed as a PHP user 
-                group, it really embraces the full gamut of the web.  The group meets over pizza and 
+                group, it really embraces the full gamut of the web.</p>
+
+                <p>The group meets over pizza and 
                 beer or soft drinks, ranging and rambling chat, in addition to interesting and 
                 informative talks.  Over the years we've had talks about design, continuous integration, 
                 docker, optimisation, side projects, learning, katas, devops, testing, joomla, minihacks, 
-                lightning talks, PHP7 and many other things. The group is a  diverse, welcoming, sociable, 
-                relaxed, irreverent, informative and fun.  A couple of times a year, usually December and 
-                July, the meeting will switch to being in the pub for more of a social vibe.  The meetings 
-                often feature PHP news, a breakdown of PHP, web and tech news from Robert Cooper, which is 
+                lightning talks, PHP7 and many other things. The group is diverse, welcoming, sociable, 
+                relaxed, irreverent, informative and fun.</p>
+                <p>A couple of times a year, usually December and 
+                July, the meeting will switch to being in the pub for more of a social vibe.</p>
+                <p>The meetings 
+                often feature <a href="https://news.aberdeenphp.co.uk">PHP news</a>, a breakdown of PHP, web and tech news from <a href="https://robertcooper.xyz">Robert Cooper</a>, which is 
                 always excellent.  We also collaborate closely with the other PHP user groups in Scotland, 
                 via the ScotlandPHP umbrella organisation.</p>
 
+            <p>More recently we have also been meeting for an informal pub lunch once a month. Keep your eye on our <a href="https://twitter.com/aberdeenphp">twitter feed</a> for the next lunch meetup.</p>
 
-            <p>Danny was one of the organisers of the first ScotlandPHP conference in October 2016, 
+            <p>Danny was one of the organisers of the first <a href="https://scotlandphp.co.uk/">ScotlandPHP conference</a> in October 2016, 
                 which was a fantastic event, bringing together great speakers with the Scottish PHP 
                 developer community and folk from across Europe.  It was a great event, with to many 
-                highlights to mention them all, from the opening keynote by Rasmus Lerdorf, the Friday 
+                highlights to mention them all, from the opening keynote by <a href="https://twitter.com/rasmus">Rasmus Lerdorf</a>, the Friday 
                 night ghost tour, a dozen great talks in 2 streams and a great Saturday evening social.  
                 The ScotlandPHP conference, as well as the annual ScotlandPHP Christmas social in Dundee 
                 and great ways of bringing the wider Scottish PHP development community together.</p>
