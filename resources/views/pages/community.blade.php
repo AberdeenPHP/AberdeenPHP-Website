@@ -8,7 +8,7 @@
             
             <h1>Community</h1>
             
-            <p>This page is for info on various related communities and things, if you've any additions or changes you can find our <a href="https://github.com/AberdeenPHP/AberdeenPHP-Website/blob/master/readme.md" target="_blank">contribution guide on GitHub</a>.
+            <p>This page aimed to provide information on various related communities and things, if you've any additions or changes you can find our <a href="https://github.com/AberdeenPHP/AberdeenPHP-Website/blob/master/readme.md" target="_blank">contribution guide on GitHub</a>.
             
             <hr/>
 
