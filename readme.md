@@ -38,14 +38,11 @@ Okay - lets run through the process, start with the 'routes' file:
 
 #### Routes - [/routes/web.php](/routes/web.php)
 
-This is where all the url's (endpoints) for the website are set up. It should be fairly easy to see what's happening here. You visit a certain url in the browser, and we return a 'view'.
+This is where all the url's (endpoints) for the website are set up. It should be fairly easy to see what's happening here. You visit a certain url in the browser, we head off to a controller that will do a little cleverness and give your browser a 'view'.
 
-Each view is passed some data - in this case `title` and `tagline`. No need for the dollar sign - Laravel adds those for you in the 'view'.
+We've included a little sample code in the [/routes/web.php](/routes/web.php) file to get you started.
 
-_Normally each 'route' in this file would call a method in a controller class which would then return the view._
-_For simplicity we are skipping that bit!_
-
-Go ahead and created your new route following the same format. Once that's done lets head off to the views:
+Go ahead and created your new route. Once that's done lets head off to the views:
 
 #### Views - [/resources/views/](/resources/views/)
 
