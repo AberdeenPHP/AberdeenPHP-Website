@@ -17,7 +17,6 @@
                 <li>All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.</li>
                 <li>Unauthorised use of this website may give to a claim for damages and/or be a criminal offence.</li>
                 <li>From time to time this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s).</li>
-                <li>You may not create a link to this website from another website or document without AberdeenPHP’s prior written consent.</li>
                 <li>Your use of this website and any dispute arising out of such use of the website is subject to the laws of Scotland and also England and Wales.</li>
             </ul>   
         </div>
