@@ -134,7 +134,7 @@
         <div class="col-md-4">
             <p>
                 <img src="images/scotlandphp_dave_october_2016_small.jpg" alt="Dave Stokes (Scotland PHP)" class="img-rounded"><br/>
-                Dave Stokes talking about MySQL json date types at ScotlandPHP, October 2016.
+                Dave Stokes talking about MySQL json data types at ScotlandPHP, October 2016.
             </p>
         </div>          
         <div class="col-md-4">
