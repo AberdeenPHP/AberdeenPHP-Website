@@ -77,7 +77,7 @@
         <div class="col-md-4">
             <p>
                 <img src="images/aberdeenphp_scott_graham_talking_local_trends_feb_2017.jpg" alt="Scott Graham (AberdeenPHP)" class="img-rounded"><br/>
-                Scott Graham joined gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
+                Scott Graham gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
             </p> 
         </div>            
         <div class="col-md-4">
