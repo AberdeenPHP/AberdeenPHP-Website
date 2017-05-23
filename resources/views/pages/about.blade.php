@@ -77,7 +77,7 @@
         <div class="col-md-4">
             <p>
                 <img src="images/aberdeenphp_scott_graham_talking_local_trends_feb_2017.jpg" alt="Scott Graham (AberdeenPHP)" class="img-rounded"><br/>
-                Scott Graham joined gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
+                Scott Graham gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
             </p> 
         </div>            
         <div class="col-md-4">
@@ -134,7 +134,7 @@
         <div class="col-md-4">
             <p>
                 <img src="images/scotlandphp_dave_october_2016_small.jpg" alt="Dave Stokes (Scotland PHP)" class="img-rounded"><br/>
-                Dave Stokes talking about MySQL json date types at ScotlandPHP, October 2016.
+                Dave Stokes talking about MySQL json data types at ScotlandPHP, October 2016.
             </p>
         </div>          
         <div class="col-md-4">
