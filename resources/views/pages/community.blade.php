@@ -2,34 +2,80 @@
 
 @section('content')
 
-<div class="container">
+<div class="container community">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             
             <h1>Community</h1>
             
-            <p>This page aimed to provide information on various related communities and things, if you've any additions or changes you can find our <a href="https://github.com/AberdeenPHP/AberdeenPHP-Website/blob/master/readme.md" target="_blank">contribution guide on GitHub</a>.
+            <p>This page aimed to provide information on various related communities and things, if you've any additions or changes you can find our <a href="https://github.com/AberdeenPHP/AberdeenPHP-Website/blob/master/readme.md">contribution guide on GitHub</a>.
             
             <hr/>
 
-            
-            <h2>Tech Community in Aberdeen</h2>
+            <h2>Tech Community In Aberdeen</h2>
             <ul>
-                <li><a href="http://techmeetup.co.uk/aberdeen.html" target="_blank">TechMeetup Aberdeen</a>: TechMeetup is a monthly excuse for developers and the tech community around Scotland to meet up and learn new stuff from each other. Also on <a href="https://www.facebook.com/Aberdeen-TechMeetup-220140384757836/" target="_blank">Facebook</a></li>
-                <li><a href="https://57north.org.uk/" target="_blank">57North</a>: Aberdeen's hackspace.</li>
+                <li>
+                    <a href="http://techmeetup.co.uk/aberdeen.html">
+                        <img src="/images/community-logos/tech-meetup.jpg" alt="TechMeetup Logo">
+                    </a>
+                    <p>
+                        <a href="http://techmeetup.co.uk/aberdeen.html">TechMeetup Aberdeen</a> 
+                        is a monthly excuse for developers and the tech community around Scotland to meet up and learn new stuff from each other.
+                    </p>
+                        
+                </li>
+                <li>
+                    <a href="https://57north.org.uk/">
+                        <img src="/images/community-logos/57north.jpg" alt="57North Logo">
+                    </a>
+                    <p>
+                       <a href="https://57north.org.uk/">57North</a> 
+                       is a hacker collective with a shared space (known as the hacklab, hackspace, hackerspace, or simply just the space). They meet every Tuesday and non-members are welcome.
+                    </p>
+                </li>
           
             </ul>
 
             <p><a href="{{ route('events.aberdeen') }}" >View other tech events in Aberdeen</a></p>
 
             
-            <h2>PHP in Scotland and the wider UK</h2>
+            <h2>PHP Around Scotland</h2>
             <ul>
-                <li><a href="https://www.scotlandphp.co.uk/" target="_blank">ScotlandPHP</a>: The umbrella organisation for Scottish PHP User Groups.</li>
-                <li><a href="https://scotlandphp.slack.com" target="_blank">ScotlandPHP Slack</a>: Come and join the chat.</li>
-                <li><a href="http://dundeephp.co.uk/" target="_blank">DundeePHP</a>: Dundee PHP user group.</li>
-                <li><a href="http://www.edpug.co.uk/" target="_blank">EdPUG</a>: Edinburgh PHP user group.</li>
-                <li><a href="http://glasgowphp.co.uk/" target="_blank">GlasgowPHP</a>: Glasgow PHP user group.</li>
+                <li>
+                    <a href="https://www.scotlandphp.co.uk/">
+                        <img src="/images/community-logos/scotlandphp.jpg" alt="Scotland PHP Logo">
+                    </a>
+                    <p>
+                        <a href="https://www.scotlandphp.co.uk/">ScotlandPHP</a>: The umbrella organisation for all the Scottish PHP User Groups.</li>
+                    </p>
+                <li>
+                    <a href="https://scotlandphp.slack.com">
+                        <img src="/images/community-logos/slack.jpg" alt="Slack Logo">
+                    </a>
+                    <p>
+                        <a href="https://scotlandphp.slack.com">ScotlandPHP Slack</a>: Completely free to join and use, the lively chat rarely stops!</li>
+                    </p>
+                <li>
+                    <a href="http://dundeephp.co.uk/">
+                        <img src="/images/community-logos/dundee.jpg" alt="Dundee PHP Logo">
+                    </a>
+                    <p>
+                        <a href="http://dundeephp.co.uk/">DundeePHP</a>: Dundee PHP user group meet on the fourth Tuesday each month.</li>
+                    </p>
+                <li>
+                    <a href="http://www.edpug.co.uk/">
+                        <img src="/images/community-logos/edpug.jpg" alt="EDPUG Logo">
+                    </a>
+                    <p>
+                        <a href="http://www.edpug.co.uk/">EdPUG</a>: Edinburgh PHP user group usually meet on the third Tuesday each month.</li>
+                    </p>
+                <li>
+                    <a href="http://glasgowphp.co.uk/">
+                        <img src="/images/community-logos/glasgow.jpg" alt="Glasgow PHP Logo">
+                    </a>
+                    <p>
+                        <a href="http://glasgowphp.co.uk/">GlasgowPHP</a>: Glasgow PHP user group usually meet on the on the second Tuesday each month.</li>
+                    </p>
             </ul>
 
             <p><a href="{{ route('events.php') }}" >View other PHP events in Scotland</a></p>
