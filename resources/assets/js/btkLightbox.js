@@ -29,7 +29,7 @@ window.addEventListener('load', function () {
 
             console.log(image);
 
-            if ( image === '' || image === null)
+            if ( image === '' || image === null || image === undefined)
             {
                 image = event.target.cloneNode(false);
             } else {
