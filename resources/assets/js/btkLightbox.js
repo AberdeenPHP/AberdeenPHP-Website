@@ -1,3 +1,14 @@
+/**
+ * btkLightbox.js
+ *
+ * To use:
+ *
+ * add the class "btk-lightbox-img" to any images you want to make lightboxable
+ * you can set a data-attribute of btk-img with a value of another image URL if you want to open a different image in the lightbox than the one you clicked
+ * e.g. a bigger version of the image or whatever.
+ *
+ */
+
 window.addEventListener('load', function () {
     document.body.addEventListener('click', function (event) {
 
@@ -6,7 +17,7 @@ window.addEventListener('load', function () {
             return false;
         }
 
-        if (event.target.tagName.toLowerCase() === 'img' && event.target.classList.contains('btk-lightbox-img')) {
+        if (( event.target.tagName.toLowerCase() === 'img' && event.target.classList.contains('btk-lightbox-img')) || event.target.parentNode.id === 'btk-lightbox-overlay' ) {
             let wrapper = document.querySelector('#btk-lightbox-overlay');
 
             if (event.target.parentNode.id === 'btk-lightbox-overlay') {
