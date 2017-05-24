@@ -5,12 +5,16 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+            <blockquote>This event data is sourced from <a href="https://opentechcalendar.co.uk">OpenTechCalendar</a>.</blockquote>
+
             @foreach($events as $category)
             
+                <img class="pull-right" src="{{ $category['logosrc'] }}" alt="{{ $category['sectionname'] }}" width=150>
                 <h2>{{ $category['sectionname'] }}</h2>
 
                 @forelse ($category['events']->data as $event)
-        
+
                     <h3>{{ $event->summary }}</h3>
                     <p> {!! nl2br( $event->start->displaytimezone ) !!} </p>
                     <p> {!! nl2br( $event->description ) !!} </p>
@@ -44,7 +48,7 @@
 
             @endforeach
                       
-            <p>Events from <a href="https://opentechcalendar.co.uk" target="_blank">OpenTechCalendar.</p>
+            <blockquote>This event data is sourced from <a href="https://opentechcalendar.co.uk">OpenTechCalendar</a>.</blockquote>
         </div>
     </div>
 </div>
