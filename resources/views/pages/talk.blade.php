@@ -23,7 +23,8 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <p>If you are interested in giving a talk at one of our meetings we’d love to hear from you. Drop us a message with an outline of what you’d like to talk to us about and we will get in touch asap.</p>
             <p>If you have any requirements for help with accommodation/travel let us know; we don’t currently have any official sponsors but we will do our best to try and help sort something out.</p>
-            <p>You can find all our <a href="/contact">contact details</a> here.</p>
+            <p>You can see some of our previous speakers and the kind of subjects they covered on our <a href="/about">About Us</a> Page.</p>
+            <p>Find all our <a href="/contact">contact details</a> here.</p>
         </div>
     </div>
 </div>
