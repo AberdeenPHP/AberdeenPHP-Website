@@ -1,3 +1,7 @@
+.btk-lightbox-img {
+  cursor: pointer;
+}
+
 .btk-lightbox-wrapper {
 
   background-color: transparentize(black, 0.1);
@@ -22,12 +26,12 @@
     width:  100%;
     height: 100%;
     &:after {
-      cursor: pointer;
-      content: '×';
+      cursor:    pointer;
+      content:   '×';
       font-size: 5rem;
-      position: relative;
-      color: white;
-      left: 2rem;
+      position:  relative;
+      color:     white;
+      left:      2rem;
     }
   }
 }
