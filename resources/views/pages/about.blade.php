@@ -91,7 +91,7 @@
     <div class="row">
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_rasmus_2016_small.jpg" alt="Rasmus Lerdorf (Scotland PHP)" class="img-rounded"><br/>
+                <img src="images/aberdeenphp_rasmus_2016_small.jpg" alt="Rasmus Lerdorf (Scotland PHP)" class="img-rounded btk-lightbox-img"><br/>
                 Some members of the group with Rasmus Lerdorf, creator of PHP, at the Scotland PHP conference in Edinburgh, October 2016.
             </p>             
         </div>
