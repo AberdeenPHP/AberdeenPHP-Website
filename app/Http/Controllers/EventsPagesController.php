@@ -36,7 +36,8 @@ class EventsPagesController extends Controller
 		 $events = Cache::remember('otherevents',15,function() {
 		    	return [
 					        ['sectionname' => 'Other Events In Aberdeen',
-					            'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/area/60/events.json'))
+					         'events' => json_decode(file_get_contents('https://opentechcalendar.co.uk/api1/area/60/events.json')),
+			            	 'logosrc' => '/images/community-logos/aberdeen.jpg',
 					        ],
 					    ];
 		});
@@ -55,7 +56,10 @@ class EventsPagesController extends Controller
 	    
 	        return [
 				        ['sectionname' => 'PHP Events In Scotland',
-				            'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json'))
+				            'events' => json_decode(file_get_contents('http://opentechcalendar.co.uk/api1/curatedlist/12/events.json')),
+				            'logosrc' => '/images/community-logos/scotlandphp.jpg',
+
+
 				        ],
 				    ];
 	    });
