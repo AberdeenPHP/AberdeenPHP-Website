@@ -10,7 +10,7 @@ return [
 		'ourMailingListUrl'=>'http://us10.campaign-archive2.com/home/?u=20b87746549994300f14bd083&id=509b586b54',
 		'ourGitHubUrl'=>'https://github.com/AberdeenPHP',
 		'ourContributionGuideUrl'=>'https://github.com/AberdeenPHP/AberdeenPHP-Website/blob/master/readme.md',
-		'scotlandPHPurl'=>'https://www.scotlandphp.co.uk/',
+		'scotlandPHPUrl'=>'https://www.scotlandphp.co.uk/',
 		'dannyContactHandle'=>'@iamdannywilson',
 		'dannyContactUrl'=>'https://twitter.com/iamdannywilson'
 
