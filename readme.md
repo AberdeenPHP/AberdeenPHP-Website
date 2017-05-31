@@ -83,6 +83,11 @@ As with the SASS you'll find the the websites JavaScript in this folder. If you 
 
 In fact - now is a good time to have a look at the [webpack.mix.js](/webpack.mix.js) and you'll see the code that points to this file.
 
+#### Config File
+
+In the config directory you'll find a [/config/site.php](/config/site.php) file. This is a central place for most of contact details or links around the website. 
+
+By placing this data in a config file it makes it almost impossible to accidentally forget to update a link buried deep on the website.
 
 #### Other Bits
 
