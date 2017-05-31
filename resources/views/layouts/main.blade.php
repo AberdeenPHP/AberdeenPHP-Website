@@ -58,28 +58,28 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="{{ route('homepage') }}">Home</a>
                     </li>
                     <li>
-                        <a href="/about">About Us</a>
+                        <a href="{{ route('about') }}">About Us</a>
                     </li>
                     <li>
-                        <a href="/events">Events</a>
+                        <a href="{{ route('events') }}">Events</a>
                     </li>                    
                     <li>
-                        <a href="/give-a-talk">Give a talk</a>
+                        <a href="{{ route('talk') }}">Give a talk</a>
                     </li>                    
                     <li>
-                        <a href="/sponsorship">Sponsorship</a>
+                        <a href="{{ route('sponsorship') }}">Sponsorship</a>
                     </li>
                     <li>
                         <a href="https://news.aberdeenphp.co.uk" target="_blank">News <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </li>                      
                     <li>
-                        <a href="/community">Community</a>
+                        <a href="{{ route('community') }}">Community</a>
                     </li>                                       
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -165,13 +165,13 @@
                         </li>                        
                     </ul>
                     <p class="footerlinks">
-                        <a href="/code-of-conduct">Code of Conduct</a>
+                        <a href="{{ route('coc') }}">Code of Conduct</a>
                         |
-                        <a href="/privacy">Privacy</a>
+                        <a href="{{ route('privacy') }}">Privacy</a>
                         |
-                        <a href="/terms">Website T's &amp; C's</a>
+                        <a href="{{ route('terms') }}">Website T's &amp; C's</a>
                         |
-                        <a href="/cookies">Cookies</a>
+                        <a href="{{ route('cookies') }}">Cookies</a>
                     </p>
                     <p class="copyright text-muted">
                         &copy; Aberdeen PHP {{ date("Y") }} |
