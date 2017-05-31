@@ -8,8 +8,8 @@
         <div class="col-md-6">
             <p>Get in touch with us anytime:</p>
             <ul class="list-unstyled">
-                <li><a href="https://twitter.com/AberdeenPhp" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter: @AberdeenPHP</a></li>
-                <li><a href="https://www.facebook.com/aberdeenpug/" target="_blank"><i class="fa fa-facebook fa-2x"></i> Facebook: AberdeenPUG</a></li>
+                <li><a href="{{ config('site.ourTwitterUrl') }}" target="_blank"><i class="fa fa-twitter fa-2x"></i> Twitter: {{ config('site.ourTwitterHandle') }}</a></li>
+                <li><a href="{{ config('site.ourFacebookUrl') }}" target="_blank"><i class="fa fa-facebook fa-2x"></i> Facebook: {{ config('site.ourFacebookHandle') }}</a></li>
                 <li><a href="mailto:{{ config('site.contactEmailAddress') }}"><i class="fa fa-envelope fa-2x"></i> Email: {{ config('site.contactEmailAddress') }}</a></li>
             </ul>
         </div>

@@ -13,14 +13,14 @@
             the door is shut, just knock on the window to right of the door.  We usually start at <time>6:30pm</time> and run till about around 8:30 or 9:00pm.</p>
             <p>We provide pizza, beer, soft drinks and terrible jokes.</p>	
             <p>The group is diverse, welcoming, sociable, relaxed, irreverent, informative and fun.</p>	
-            <p>It is probably a good idea to check <a href="https://twitter.com/aberdeenphp">AberdeenPHP on Twitter</a> a couple of days before the meeting, incase the time or venue has changed.</p>	
+            <p>It is probably a good idea to check <a href="{{ config('site.ourTwitterUrl') }}">AberdeenPHP on Twitter</a> a couple of days before the meeting, incase the time or venue has changed.</p>	
         </div>
         <div class="col-md-4">
             <a 
                 class="twitter-timeline" 
-                href="https://twitter.com/AberdeenPhp"
+                href="{{ config('site.ourTwitterUrl') }}"
                 data-tweet-limit="5"
-            >Tweets by AberdeenPhp</a> 
+            >Tweets by {{ config('site.ourTwitterHandle') }}</a> 
             
         </div>             
          

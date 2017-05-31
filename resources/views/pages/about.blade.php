@@ -7,7 +7,7 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h1>History and Background</h1>
             <p>PHP (<a href="http://php.net/manual/en/intro-whatcando.php">Hypertext Preprocessor</a>) is one of the most popular programming languages used by people building websites (and mobile applications).</p>
-            <p>Aberdeen PHP user group was started in December 2014 by <a href="http://iamdannywilson.com/">Danny Wilson</a> and we've been 
+            <p>Aberdeen PHP user group was started in December 2014 by <a href="{{ config('site.dannyContactUrl') }}">Danny Wilson</a> and we've been 
                 meeting every first Wednesday of the month since then.  Although formed as a PHP user 
                 group, it really embraces the full gamut of the web.</p>
 
@@ -24,9 +24,9 @@
                 always excellent.  We also collaborate closely with the other PHP user groups in Scotland, 
                 via the ScotlandPHP umbrella organisation.</p>
 
-            <p>More recently we have also been meeting for an informal pub lunch once a month. Keep your eye on our <a href="https://twitter.com/aberdeenphp">twitter feed</a> for the next lunch meetup.</p>
+            <p>More recently we have also been meeting for an informal pub lunch once a month. Keep your eye on our <a href="{{ config('site.ourTwitterUrl') }}">twitter feed</a> for the next lunch meetup.</p>
 
-            <p>Danny was one of the organisers of the first <a href="https://scotlandphp.co.uk/">ScotlandPHP conference</a> in October 2016, 
+            <p>Danny was one of the organisers of the first <a href="{{ config('site.scotlandPHPUrl') }}">ScotlandPHP conference</a> in October 2016, 
                 which was a fantastic event, bringing together great speakers with the Scottish PHP 
                 developer community and folk from across Europe.  It was a great event, with to many 
                 highlights to mention them all, from the opening keynote by <a href="https://twitter.com/rasmus">Rasmus Lerdorf</a>, the Friday 
@@ -34,7 +34,7 @@
                 The ScotlandPHP conference, as well as the annual ScotlandPHP Christmas social in Dundee 
                 and great ways of bringing the wider Scottish PHP development community together.</p>
 
-            <p>Many members of the group are also active on the <a href="https://scotlandphp.slack.com" target="_blank">
+            <p>Many members of the group are also active on the <a href="{{ config('site.ourSlackUrl') }}" target="_blank">
                 ScotlandPHP Slack channel</a> which allows everyone to keep in touch between meetings, and with 
                 the wider community.</p>
                 

@@ -116,7 +116,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="https://slack.scotlandphp.co.uk/" title="ScotlandPHP Slack Channel" target="_blank">
+                            <a href="{{ config('site.ourSlackUrl') }}" title="ScotlandPHP Slack Channel" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-slack fa-stack-1x fa-inverse"></i>
@@ -124,7 +124,7 @@
                             </a>
                         </li>                    
                         <li>
-                            <a href="https://twitter.com/aberdeenphp" title="AberdeenPHP on Twitter" target="_blank">
+                            <a href="{{ config('site.ourTwitterUrl') }}" title="AberdeenPHP on Twitter" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -132,7 +132,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/aberdeenpug/"  title="AberdeenPHP on Facebook" target="_blank">
+                            <a href="{{ config('site.ourFacebookUrl') }}"  title="AberdeenPHP on Facebook" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -140,7 +140,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://us10.campaign-archive2.com/home/?u=20b87746549994300f14bd083&id=509b586b54" title="AberdeenPHP on MailChimp" target="_blank">
+                            <a href="{{ config('site.ourMailingListUrl') }}" title="AberdeenPHP Mailing List" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -148,7 +148,7 @@
                             </a>
                         </li>                        
                         <li>
-                            <a href="https://github.com/AberdeenPHP" title="AberdeenPHP on GitHub" target="_blank">
+                            <a href="{{ config('site.ourGitHubUrl') }}" title="AberdeenPHP on GitHub" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -156,7 +156,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.scotlandphp.co.uk/" title="ScotlandPHP" target="_blank">
+                            <a href="{{ config('site.scotlandPHPUrl') }}" title="ScotlandPHP" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
