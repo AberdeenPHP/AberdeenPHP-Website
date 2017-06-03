@@ -27,7 +27,7 @@ window.addEventListener('load', function () {
 
             let image = event.target.dataset.btkImg;
 
-            console.log(image);
+            // console.log(image);
 
             if ( image === '' || image === null || image === undefined)
             {
