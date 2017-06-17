@@ -8,10 +8,10 @@
 // // Bootstrap
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import "helpers";
 @import "theme";
 @import "headers";
 @import "contact";
-@import "helpers";
 @import "about";
 @import "community";
 @import "btkLightbox";
