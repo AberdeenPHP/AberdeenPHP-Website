@@ -27,4 +27,4 @@ Route::get('/events/aberdeen', ['as'=>'events.aberdeen','uses'=>'EventsPagesCont
 Route::get('/events/php', ['as'=>'events.php','uses'=>'EventsPagesController@eventsPHP']);
 
 Route::get('/contact', ['as'=>'','uses'=>'ContactFormController@index']);
-Route::post('/contact', ['as'=>'contactform','uses'=>'ContactFormController@store']); 
+Route::post('/contact', ['as'=>'contactform','uses'=>'ContactFormController@store']);

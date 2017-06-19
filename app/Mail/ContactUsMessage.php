@@ -31,6 +31,7 @@ class ContactUsMessage extends Mailable
     {
         return $this->subject('Contact Us Message')
                     ->markdown('emails.contact-us-message')
-                    ->with(compact(['request']));;
+                    ->with(compact(['request']));
+        ;
     }
 }
