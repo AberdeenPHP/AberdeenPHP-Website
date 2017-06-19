@@ -11,6 +11,17 @@ nav {
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
 	color: #333;
 }
+
+.navbar > .container-fluid .navbar-brand {
+	padding: 0;
+	margin-left: 10px;
+	margin-top: 10px;
+
+	@media (min-width: $screen-sm-min) {
+		margin-left: 0;
+	}
+}
+
 .site-heading {
 
 	text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
