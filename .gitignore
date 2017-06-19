@@ -61,3 +61,7 @@ node_modules/
 containers/
 Makefile
 docker-compose.yml
+
+
+# php cs fixer cache
+.php_cs.cache

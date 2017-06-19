@@ -12,6 +12,6 @@ return [
 		'ourContributionGuideUrl'=>'https://github.com/AberdeenPHP/AberdeenPHP-Website/blob/master/readme.md',
 		'scotlandPHPUrl'=>'https://www.scotlandphp.co.uk/',
 		'dannyContactHandle'=>'@iamdannywilson',
-		'dannyContactUrl'=>'https://twitter.com/iamdannywilson'
-
-];
+		'dannyContactUrl'=>'https://twitter.com/iamdannywilson',
+        'contactEmailAddress'=>'info@aberdeenphp.co.uk',
+        ];

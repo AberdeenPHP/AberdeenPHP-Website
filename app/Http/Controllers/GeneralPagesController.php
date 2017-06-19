@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class GeneralPagesController extends Controller
 {
-    
+   
 	public function home(){
 
 		return view('pages.homepage',['title'=>"Aberdeen PHP",
@@ -62,5 +62,6 @@ class GeneralPagesController extends Controller
 		return view('pages.cookies',['title'=>"Aberdeen PHP",
 								     'tagline'=>"How Cookies Are Used On This Website"]); 
 	}
+
 
 }
