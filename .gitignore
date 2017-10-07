@@ -41,6 +41,7 @@ Homestead.json
 .env
 composer.phar
 composer.lock
+package-lock.json
 
 # End of https://www.gitignore.io/api/sublimetext,laravel
 =======
@@ -62,6 +63,9 @@ containers/
 Makefile
 docker-compose.yml
 
+# Ignore Richard's Docker Stuff
+/docker
+develop.sh
 
 # php cs fixer cache
 .php_cs.cache
