@@ -18,7 +18,7 @@
 		<div class="form-group {{ $errors->has('message') ? ' has-error' : '' }}">
 			<label for="message">Your Message:</label>
 			<textarea name="message" id="message" class="form-control no-resize autosize"
-					  required maxlength="6000">{{ old('message') }}</textarea>
+					  required maxlength="5000">{{ old('message') }}</textarea>
 		</div>
 		<input type="submit" value="Send Message" class="btn"><br>
 		<small>* Your details will <a href="{{ route('privacy') }}">never be shared</a>.</small>
