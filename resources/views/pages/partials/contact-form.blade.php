@@ -1,7 +1,7 @@
 <div class="pt-lg">
 
 	@include('layouts.partials.errors')
-	
+
 	<div class="submit-status"></div> <!-- submit status -->
 	<form method="post" action="{{ route('contactform') }}" >
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -24,10 +24,8 @@
 
 </div>
 
-@push('javascriptfrompages')
-    var queryDict = {};
-    location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]});
-    if (queryDict['sent']){
-    	$('.submit-status').html('<span class="success"><i class="fa fa-check-circle"></i>Thank you. We will be in touch shortly.</span>').fadeIn(300).delay(10000).fadeOut(3000);
-    }
-@endpush
+@if (session('sent'))
+	@push('javascriptfrompages')
+		$('.submit-status').html('<span class="success"><i class="fa fa-check-circle"></i>Thank you. We will be in touch shortly.</span>').fadeIn(300).delay(10000).fadeOut(3000);
+	@endpush
+@endif
