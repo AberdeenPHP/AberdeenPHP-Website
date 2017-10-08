@@ -20,6 +20,6 @@ class ContactFormController extends Controller
     {
         Mail::to(config('site.contactEmailAddress'))->send(new ContactUsMessage());
 
-        return Redirect::to('/contact?sent=1');
+        return redirect('contact')->with('sent', true);
     }
 }
