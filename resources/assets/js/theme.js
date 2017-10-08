@@ -41,12 +41,12 @@ jQuery(document).ready(function($) {
 
 /**
  * Load autosize plugin for automatically resizing textarea elemments. For
- * more information visit...
+ * more information visit:
  * @link https://github.com/jackmoore/autosize
  */
 window.autosize = require('autosize');
 
 /**
- * Autosize all textarea elements with class autosize...
+ * Automatically resize all textarea elements with class autosize...
  */
 autosize($('textarea.autosize'));
