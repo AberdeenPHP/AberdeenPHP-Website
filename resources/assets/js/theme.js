@@ -38,3 +38,15 @@ jQuery(document).ready(function($) {
             });
     }
 });
+
+/**
+ * Load autosize plugin for automatically resizing textarea elemments. For
+ * more information visit:
+ * @link https://github.com/jackmoore/autosize
+ */
+window.autosize = require('autosize');
+
+/**
+ * Automatically resize all textarea elements with class autosize...
+ */
+autosize($('textarea.autosize'));
