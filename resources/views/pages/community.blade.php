@@ -10,7 +10,7 @@
             
             <p>This page aimed to provide information on various related communities and things, if you've any 
             additions or changes you can find our <a href="{{ config('site.ourContributionGuideUrl') }}">contribution 
-            guide on GitHub</a></p>.
+            guide on GitHub</a>.</p>
             
             <hr/>
 
