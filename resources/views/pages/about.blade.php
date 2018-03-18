@@ -66,26 +66,48 @@
         </div>            
        
     </div>       
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_march_2018.jpg" alt="Rosemary Thomas - March 2018" class="img-rounded btk-lightbox-img btk-lightbox-img"><br/>
+                Rosemary Thomas in March 2018 gave us a talk on her experiences as a woman working in tech and an introduction to argumentation schemes. 
+            </p>             
+        </div>
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_december_2017.jpg" alt="December 2017 Meet @ Wired Studio" class="img-rounded btk-lightbox-img btk-lightbox-img"><br/>
+                A change of venue for our pre-christmas meet up in 2017 as we took the short walk to the excellent Wired Studios.
+            </p> 
+        </div>            
+        <div class="col-md-4">
+            <p>
+                <img src="images/aberdeenphp_november_2017.jpg" alt="Danny in November 2017" class="img-rounded btk-lightbox-img btk-lightbox-img"><br/>
+                Here's Danny back in November 2017 talking about Microsoft VS Code while everyone finished off the pizza!
+            </p>             
+        </div>          
+    </div>   
+
             
     <div class="row">
+        <div class="col-md-4">
+            <p>
+            <img src="images/aberdeenphp_scott_graham_talking_local_trends_feb_2017.jpg" alt="Scott Graham (AberdeenPHP)" class="img-rounded btk-lightbox-img"><br/>
+            Scott Graham gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
+            </p>
+        </div>
         <div class="col-md-4">
             <p>
                 <img src="images/aberdeenphp_david_mackay_talking_productivity_march2017.jpg" alt="David Mackay (AberdeenPHP)" class="img-rounded btk-lightbox-img"><br/>
                 Rawkode himself (David Mackay) talked all things productivity in March 2017 with run through of productivity tricks and life hacks.
             </p>             
-        </div>
-        <div class="col-md-4">
-            <p>
-                <img src="images/aberdeenphp_scott_graham_talking_local_trends_feb_2017.jpg" alt="Scott Graham (AberdeenPHP)" class="img-rounded btk-lightbox-img"><br/>
-                Scott Graham gave us an insight into the changing trends in web development work in the local area from the perspective of an agency manager, Feb 2017.
-            </p> 
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_opensource_may_2017.jpg" alt="Talking Opensource (AberdeenPHP)" class="img-rounded btk-lightbox-img"><br/>
-                May 2017 was all about showing off some easy ways to get involved with open source software.
-            </p>             
-        </div>          
+                <img src="images/aberdeenphp_meet_polybag_raffle_october_2015_small.jpg" alt="Raffle Time (AberdeenPHP)" class="img-rounded btk-lightbox-img"><br/>
+                We have raffles sometimes, and sometimes we use a polybag :)
+            </p> 
+            </div>          
     </div>       
 
     <div class="row">
@@ -103,8 +125,10 @@
         </div>            
         <div class="col-md-4">
             <p>
-                <img src="images/aberdeenphp_meet_polybag_raffle_october_2015_small.jpg" alt="Raffle Time (AberdeenPHP)" class="img-rounded btk-lightbox-img"><br/>
-                We have raffles sometimes, and sometimes we use a polybag :)
+                <img src="images/aberdeenphp_may2016.jpg" alt="Stuart Whitehead - May 2016" class="img-rounded btk-lightbox-img btk-lightbox-img"><br/>
+                Stuart Whitehead joined us in May 2016 to give an insightful talk about his recent involvment with IOT projects.
+   
+               
             </p>             
         </div>          
     </div>        
