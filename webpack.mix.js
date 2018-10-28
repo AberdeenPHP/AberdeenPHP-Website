@@ -13,6 +13,6 @@ let mix = require('laravel-mix');
 
 //to do - stop having to use this false thing
 mix
-   .js(['resources/assets/js/theme.js', 'resources/assets/js/btkLightbox.js'], 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
+   .js(['resources/js/theme.js', 'resources/js/btkLightbox.js'], 'public/js')
+   .sass('resources/sass/app.scss', 'public/css')
    .version();

@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $description or 'Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.' }}">
+    <meta name="description" content="{{ $description ?? 'Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.' }}">
     <meta name="author" content="Aberdeen PHP">
-    <meta name="keywords" content="{{ $keywords or 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
+    <meta name="keywords" content="{{ $keywords ?? 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
     <meta name="msvalidate.01" content="08CCB8004B0AB85022A49662B898CA1C" />
     <meta name="google-site-verification" content="24vvvmBhpQ5J9fP088rOmKxuYL6qDaKPvczOA3p5CkI" />
-    <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
+    <title>{{ $title ?? 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
     <link href="images/icons/favicon.ico" rel="shortcut icon" type="{{ url('image/vnd.microsoft.icon') }}" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/icons/favicon.ico') }}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('images/icons/apple-touch-icon-144-precomposed.png') }}">
@@ -35,7 +35,7 @@
     <![endif]-->
     <meta property="og:url"                content="{{ Request::url() }}" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="{{ $title or '' }} - Aberdeen PHP User Group" />
+    <meta property="og:title"              content="{{ $title ?? '' }} - Aberdeen PHP User Group" />
     <meta property="og:image"              content="https://aberdeenphp.co.uk/images/for_facebook/share_image_1.jpg" />
     <meta property="og:description"        content="Aberdeen PHP User is a regular meeting for developers in Aberdeen and the surrounding areas to discuss just about anything in and around the PHP Community">
     
@@ -90,14 +90,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ $image or $randomBackgroundImage }})">
+    <header class="intro-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ $image ?? $randomBackgroundImage }})">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>{{ $title or 'Aberdeen PHP' }}</h1>
+                        <h1>{{ $title ?? 'Aberdeen PHP' }}</h1>
                         <hr class="small">
-                        <span class="subheading">{{ $tagline or "The monthly meetup for Aberdeen's Developers" }}</span>
+                        <span class="subheading">{{ $tagline ?? "The monthly meetup for Aberdeen's Developers" }}</span>
                     </div>
                 </div>
             </div>
