@@ -40,7 +40,7 @@ Homestead.json
 .env.php
 .env
 composer.phar
-composer.lock
+# composer.lock
 package-lock.json
 npm-debug.log
 yarn-error.log
