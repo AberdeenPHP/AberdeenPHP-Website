@@ -177,8 +177,7 @@ return [
         /*
         Our Service Providers...
          */
-        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
-
+     
     ],
 
     /*
@@ -231,8 +230,7 @@ return [
         /*
         Our Aliases
          */
-        'Bugsnag' => Bugsnag\BugsnagLaravel\Facades\Bugsnag::class,
-
+      
     ],
 
 ];
