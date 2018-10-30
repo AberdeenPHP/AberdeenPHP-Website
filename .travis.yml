@@ -1,0 +1,38 @@
+language: php
+php:
+- 7.2
+services:
+  - mysql
+addons:
+  apt:
+    sources:
+      - mysql-5.7-trusty
+    packages:
+      - mysql-server
+      - mysql-client
+dist: trusty
+sudo: required
+before_script:
+- cp .env.travis .env
+- composer self-update
+- composer install --no-interaction
+- mysql -e 'create database homestead_test;'
+script:
+- php artisan key:generate
+- vendor/bin/phpunit
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
+notifications:
+  slack:
+    rooms:
+      secure: Kq4VaMSwhebLyoqsLmVbh7ZhdOAut/7fgHrPgj6c3sX0Sn2bz5lHI6AT9c50eNlq87LiPDvPpXt8Wa3GFadpqlRP3u9EwNA2N4PTQ70VJWQXw8geg1yRJnSGs972SZDZxTM37Sdod/I+sLgOYo0C5aYLp4egqme75mKXqo+oexoaj7uDcCZK1RhXuzlojG0+1SPA+d7ya+hoQOAKWMoiTMviw011nLgZFSze9wHhdsZx9sszcRpnv4Oj9GzBeN6qs8nIMPf0WS2TUNb6mt7SrwA4JwyMsjraYcuwzbMASJIkfYEtSY0dYeOU+gafMvT34SmHdHir32U2yJ43CsWIrtgBBu26BJodoXhV5qwxfQxIkPsbZFOThoyDX5FSHaIDlohxUfAzWo5qs3TwIkPhCSNCCmQizbH9rlBFtDLhSWZIr9LB2c5ILxNvnOpQDaJziVSkicSJMbDD0uL+5qWi+rNH1N+rMpZwRM3BxmKfT/OfF5gormvKDnfzttGl5VebZ/UI5TB8MI419pAzi3UrmT2fJnyWum7p/17W/prmkUmjF/2M4M37T7+rIg80QOzBnnkpCSsjKGAV4s+3l7608Grxdi9MBg9+IyIqCgSqogZoyWrOuLmwY5OXIai6So+NmA46lf0kbeCJhjuCp1RIKdqN6zTviuJICbxwQ+o0aDE=
+env:
+  global:
+    secure: heocChNovP7EVKDm/5wBYYjJXw4Fm1DUP+v8aLuUao1ME3/8F4vLCuObx8jxSQkyCmfO1L0YsWEjWy1hn2Jiv809Dp9rSkQX9Gv7glYgQnvCYAR1TD1H3x5fyJ7+k6MMx6K+mEQmkgbXh7jKfat629tEHeK6mthqiYS2+MRWGmjfIwjao14hkolNshuly4ufVntBCYtp9g2sm/sA4FC+kAkHM1lQuSFCVlAL1IvR+YuAsILI1rdzxD/k3xRGPVsxhkbm1spCI87rqug0IwqvdxHUxi2tFttuFD1kCW/U6FTn4oiDgJAtjBb558txuCPgCQCrHT+kAzPW7pJVrilDzplqOLYWAJxMZEVTqvQ/B3WV5Msp/u1yCA/q6alt8OmBCaIGiInbMAQYVnxRHmIftm45kRpipi4tR67Jrtct2vwXFbBu67nt7T+LHXM6OEDBm1NqrghKze2m3Z6QWTKEShBccCT575g/+mGId9p9pmWwKWe+J5EQTKCVYzxAtmOCdhve1OZYoDra035Lm235b3r1SzzQy18R+fL/umhVKPBP15hq7QF11HZj2d4NFg0MIDxTCIAmhV0cuku05nuJ3OLSKaULeviBGw7CAwUbuHE+ltD6ZDBVOOvO4+JAa1FR3HTHHH5zzorYzW3h0at1/29KUe3V5PVOkVE1vLE7OOU=
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - $HOME/.npm
