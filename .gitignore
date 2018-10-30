@@ -72,3 +72,8 @@ develop.sh
 
 # php cs fixer cache
 .php_cs.cache
+
+# assets are now being buitl on the server
+/public/css
+/public/js
+/public/mix-manifest.json
