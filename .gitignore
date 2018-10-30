@@ -48,7 +48,6 @@ yarn-error.log
 # End of https://www.gitignore.io/api/sublimetext,laravel
 =======
 composer.phar
-vendor/
 .idea/
 node_modules/
 .DS_Store
