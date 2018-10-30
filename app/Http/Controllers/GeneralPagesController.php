@@ -3,11 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Bugsnag\BugsnagLaravel\Facades\Bugsnag;
+use RuntimeException;
 
 class GeneralPagesController extends Controller
 {
     public function home()
     {
+
+
+        Bugsnag::notifyException(new RuntimeException("Test error"));
+
         return view('pages.homepage', ['title'=>"Aberdeen PHP",
                                       'tagline'=>"The heart of Aberdeen's web development community",
                                       'image'=>'/images/random_header_images/aberdeen_08.jpg']);
