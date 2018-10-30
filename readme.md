@@ -71,8 +71,6 @@ If you are familiar with SASS/SCSS this folder will make sense. Its fairly basic
 
 To compile the SASS to regular CSS you run `npm run dev` from the command line.
 
-(You can run `npm run production` when you are ready to upload your changes - this reduced the file sizes dramatically)
-
 Getting Webpack (and NPM) installed can be a challenging and frustrating experience. In most cases you will only need to run `npm install` from the root directory of this project and magic will happen. 
 
 Its a bit beyond the scope of this guide to go into all that. Have a look at the [Laravel Docs](https://laravel.com/docs/5.7/mix) or get in touch and we'll help!
@@ -88,6 +86,13 @@ In fact - now is a good time to have a look at the [webpack.mix.js](/webpack.mix
 In the config directory you'll find a [/config/site.php](/config/site.php) file. This is a central place for most of contact details or links around the website. 
 
 By placing this data in a config file it makes it almost impossible to accidentally forget to update a link buried deep on the website.
+
+#### Tests and Build Process
+
+When you submit a Pull Request we have Travis CI installed. This will automatically create an in-memory copy of the website and run the tests that you have added (you did add tests - right?) You can see the config for this process in the [/.travis.yml](.travis.yml) file. 
+
+When your pull request is merged to master a deployment is triggered on the server and this also creates and css and javascript as it runs.
+
 
 #### Other Bits
 
