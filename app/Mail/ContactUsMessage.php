@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
 
 class ContactUsMessage extends Mailable
 {
@@ -32,6 +31,5 @@ class ContactUsMessage extends Mailable
         return $this->subject('Contact Us Message')
                     ->markdown('emails.contact-us-message')
                     ->with(compact(['request']));
-        ;
     }
 }

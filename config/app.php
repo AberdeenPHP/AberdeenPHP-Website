@@ -179,7 +179,7 @@ return [
         /*
         Our Service Providers...
          */
-     
+
     ],
 
     /*
@@ -232,7 +232,7 @@ return [
         /*
         Our Aliases
          */
-      
+
     ],
 
 ];

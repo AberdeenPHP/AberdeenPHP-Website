@@ -3,15 +3,13 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\Mail\ContactUsMessage;
 use Illuminate\Support\Facades\Mail;
-
-use App\Mail\ContactUsMessage; 
 
 class ContactFormTest extends TestCase
 {
     /** @test */
-    function a_user_can_view_contact_form()
+    public function a_user_can_view_contact_form()
     {
         $this->get(route('contact'))
             ->assertStatus(200)
@@ -20,16 +18,16 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    function a_user_can_send_an_enquiry()
+    public function a_user_can_send_an_enquiry()
     {
         $data = [
             'name' => 'Danny Ock',
             'email' => 'the-artist-formerly-known-as-d-wil@example.org',
-            'message' => 'Lorem Ipsum'
+            'message' => 'Lorem Ipsum',
         ];
 
         $this->get(route('contact'));
-        
+
         Mail::fake();
 
         $this->followingRedirects()
@@ -41,7 +39,7 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    function enquiry_is_not_sent_on_failed_validation_of_request()
+    public function enquiry_is_not_sent_on_failed_validation_of_request()
     {
         $data = [];
 
@@ -58,12 +56,12 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    function an_enquiry_name_has_a_minimum_length_of_3()
+    public function an_enquiry_name_has_a_minimum_length_of_3()
     {
         $data = [
             'name' => 'DO',
             'email' => 'acronymluva@example.org',
-            'message' => 'ABPHPFTW'
+            'message' => 'ABPHPFTW',
         ];
 
         $this->post(route('contactform'), $data)
@@ -71,12 +69,12 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    function an_enquiry_name_has_a_maximum_length_of_100()
+    public function an_enquiry_name_has_a_maximum_length_of_100()
     {
         $data = [
             'name' => str_random(101),
             'email' => 'acronymluva@example.org',
-            'message' => 'ABPHPFTW'
+            'message' => 'ABPHPFTW',
         ];
 
         $this->post(route('contactform'), $data)
@@ -84,12 +82,12 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    function an_enquiry_email_must_be_valid()
+    public function an_enquiry_email_must_be_valid()
     {
         $data = [
             'name' => 'Danny Ock',
             'email' => 'invalidemail',
-            'message' => 'Have you seen my ABPHP tattoo?'
+            'message' => 'Have you seen my ABPHP tattoo?',
         ];
 
         $this->post(route('contactform'), $data)
@@ -97,12 +95,12 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    function an_enquiry_message_has_a_minimum_length_of_3()
+    public function an_enquiry_message_has_a_minimum_length_of_3()
     {
         $data = [
             'name' => 'Danny Ock',
             'email' => 'acronymluva@example.org',
-            'message' => 'AB'
+            'message' => 'AB',
         ];
 
         $response = $this->post(route('contactform'), $data)
@@ -110,12 +108,12 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    function an_enquiry_message_has_a_maximum_length_of_5000()
+    public function an_enquiry_message_has_a_maximum_length_of_5000()
     {
         $data = [
             'name' => 'Danny Ock',
             'email' => 'acronymluva@example.org',
-            'message' => str_random(5001)
+            'message' => str_random(5001),
         ];
 
         $response = $this->post(route('contactform'), $data)
