@@ -1,3 +1,6 @@
+[![StyleCI](https://github.styleci.io/repos/65073167/shield?branch=master)](https://github.styleci.io/repos/65073167)
+[![Build Status](https://travis-ci.com/AberdeenPHP/AberdeenPHP-Website.svg?branch=master)](https://travis-ci.com/AberdeenPHP/AberdeenPHP-Website)
+
 # Site
 Website for AberdeenPHP User Group
 
