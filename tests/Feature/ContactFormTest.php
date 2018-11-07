@@ -24,6 +24,7 @@ class ContactFormTest extends TestCase
             'name' => 'Danny Ock',
             'email' => 'the-artist-formerly-known-as-d-wil@example.org',
             'message' => 'Lorem Ipsum',
+            'g-recaptcha-response' => 'a_valid_token'
         ];
 
         $this->get(route('contact'));
@@ -32,14 +33,14 @@ class ContactFormTest extends TestCase
 
         $this->followingRedirects()
             ->post(route('contactform'), $data)
-            ->assertSee('Thank you. We will be in touch shortly.')
+            ->assertSeeText('Thank you. We will be in touch shortly.')
             ->assertDontSeeText('Sorry - something went wrong');
 
         Mail::assertSent(ContactUsMessage::class, 1);
     }
 
     /** @test */
-    public function enquiry_is_not_sent_on_failed_validation_of_request()
+    public function an_enquiry_is_not_sent_on_failed_validation_of_request()
     {
         $data = [];
 
@@ -49,7 +50,7 @@ class ContactFormTest extends TestCase
 
         $this->followingRedirects()
             ->post(route('contactform'), $data)
-            ->assertSee('Sorry - something went wrong')
+            ->assertSeeText('Sorry - something went wrong')
             ->assertDontSeeText('Thank you. We will be in touch shortly.');
 
         Mail::assertNotSent(ContactUsMessage::class);
@@ -118,5 +119,36 @@ class ContactFormTest extends TestCase
 
         $response = $this->post(route('contactform'), $data)
             ->assertSessionHasErrors('message');
+    }
+
+    /** @test */
+    public function an_enquiry_requires_a_recaptcha_response_token()
+    {
+        $data = [
+            'name' => 'Dalek Caan',
+            'email' => 'iamarobot@example.org',
+            'message' => 'Exterminate!',
+        ];
+
+        $response = $this->post(route('contactform'), $data)
+            ->assertSessionHasErrors('g-recaptcha-response');
+    }
+
+    /** @test */
+    public function an_error_will_be_displayed_if_recaptcha_response_token_is_invalid()
+    {
+        $data = [
+            'name' => 'Dalek Caan',
+            'email' => 'iamarobot@example.org',
+            'message' => 'Exterminate!'
+        ];
+
+        $this->get(route('contact'));
+
+        $this->followingRedirects()
+            ->post(route('contactform'), $data)
+            ->assertSeeText('Sorry - something went wrong')
+            ->assertSeeText('Unable to verify you are not a robot. Please try again.')
+            ->assertDontSeeText('Thank you. We will be in touch shortly.');
     }
 }

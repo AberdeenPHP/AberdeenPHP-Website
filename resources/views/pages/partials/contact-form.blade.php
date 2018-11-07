@@ -20,11 +20,16 @@
 			<textarea name="message" id="message" class="form-control no-resize autosize"
 					  required maxlength="5000">{{ old('message') }}</textarea>
 		</div>
+		<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" />
 		<input type="submit" value="Send Message" class="btn"><br>
 		<small>* Your details will <a href="{{ route('privacy') }}">never be shared</a>.</small>
 	</form>
 
 </div>
+
+@push('head')
+	<script src='https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}'></script>
+@endpush
 
 @if (session('sent'))
 	@push('javascriptfrompages')
@@ -35,3 +40,12 @@
 			.fadeOut(3000);
 	@endpush
 @endif
+
+@push('javascriptfrompages')
+	grecaptcha.ready(function() {
+		grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', { action: 'contact_form' })
+			.then(function(token) {
+				document.getElementById("g-recaptcha-response").value = token;
+			});
+	});
+@endpush
