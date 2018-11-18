@@ -24,7 +24,7 @@ class ContactFormTest extends TestCase
             'name' => 'Danny Ock',
             'email' => 'the-artist-formerly-known-as-d-wil@example.org',
             'message' => 'Lorem Ipsum',
-            'g-recaptcha-response' => 'a_valid_token'
+            'g-recaptcha-response' => 'a_valid_token',
         ];
 
         $this->get(route('contact'));
@@ -37,6 +37,13 @@ class ContactFormTest extends TestCase
             ->assertDontSeeText('Sorry - something went wrong');
 
         Mail::assertSent(ContactUsMessage::class, 1);
+    }
+
+    /** @test */
+    public function it_uses_recaptcha_site_key() {
+        $response = $this->get(route('contact'));
+
+        $response->assertSee(config('recaptcha.key'));
     }
 
     /** @test */
@@ -140,7 +147,7 @@ class ContactFormTest extends TestCase
         $data = [
             'name' => 'Dalek Caan',
             'email' => 'iamarobot@example.org',
-            'message' => 'Exterminate!'
+            'message' => 'Exterminate!',
         ];
 
         $this->get(route('contact'));

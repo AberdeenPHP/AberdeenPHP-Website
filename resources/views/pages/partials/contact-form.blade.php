@@ -28,7 +28,7 @@
 </div>
 
 @push('head')
-	<script src='https://www.google.com/recaptcha/api.js?render={{ env('RECAPTCHA_SITE_KEY') }}'></script>
+	<script src='https://www.google.com/recaptcha/api.js?render={{ config('recaptcha.key') }}'></script>
 @endpush
 
 @if (session('sent'))
@@ -43,7 +43,7 @@
 
 @push('javascriptfrompages')
 	grecaptcha.ready(function() {
-		grecaptcha.execute('{{ env('RECAPTCHA_SITE_KEY') }}', { action: 'contact_form' })
+		grecaptcha.execute('{{ config('recaptcha.key') }}', { action: 'contact_form' })
 			.then(function(token) {
 				document.getElementById("g-recaptcha-response").value = token;
 			});

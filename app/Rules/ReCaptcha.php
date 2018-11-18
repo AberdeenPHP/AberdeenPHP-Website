@@ -16,15 +16,11 @@ class ReCaptcha implements Rule
      */
     public function passes($attribute, $value)
     {
-        if (config('app.env') !== 'production') {
-            return true;
-        }
-
-        $recaptcha = new ReCaptchaClient(env('RECAPTCHA_SECRET_KEY'));
+        $recaptcha = new ReCaptchaClient(config('recaptcha.secret'));
 
         $response = $recaptcha->verify($value, request()->ip());
 
-        if (!$response->isSuccess()) {
+        if (! $response->isSuccess()) {
             return false;
         }
 
