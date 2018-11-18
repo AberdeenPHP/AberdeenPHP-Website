@@ -40,7 +40,7 @@ class ContactFormTest extends TestCase
     }
 
     /** @test */
-    public function it_uses_recaptcha_site_key() 
+    public function it_uses_recaptcha_site_key()
     {
         $response = $this->get(route('contact'));
 
