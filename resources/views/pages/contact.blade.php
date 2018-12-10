@@ -16,9 +16,7 @@
         <div class="col-md-6">
             @include('pages.partials.contact-form')
         </div>
-      
     </div>
 </div>
 
 @endsection
-

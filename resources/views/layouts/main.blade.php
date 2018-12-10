@@ -39,6 +39,7 @@
     <meta property="og:image"              content="https://aberdeenphp.co.uk/images/for_facebook/share_image_1.jpg" />
     <meta property="og:description"        content="Aberdeen PHP User is a regular meeting for developers in Aberdeen and the surrounding areas to discuss just about anything in and around the PHP Community">
     
+    @stack('head')
 </head>
 <body>
 
