@@ -58,7 +58,7 @@
 
 
             <h2>Other Supporters</h2>
-            <a href="https://www.jetbrains.com" target="_blank"><img src="jetbrains.png"></a>
+            <p>If you'd like to support the group in other ways, please get in touch.  We're always looking for books, subscriptions and that sort of thing, to raffle off at meetups.<p>
             
         </div>
     </div>
