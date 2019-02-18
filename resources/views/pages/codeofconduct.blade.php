@@ -14,7 +14,7 @@
             <p>
             Email: <a href="mailto:{{ config('site.contactEmailAddress') }}">{{ config('site.contactEmailAddress') }}</a><br><br>
             Twitter: <a href="{{ config('site.ourTwitterUrl') }}">{{ config('site.ourTwitterHandle') }}</a><br><br>
-            Danny Wilson: <a href="{{ config('site.dannyContactUrl') }}">{{ config('site.dannyContactHandle') }}</a></p>
+            Danny Ockilson: <a href="{{ config('site.dannyContactUrl') }}">{{ config('site.dannyContactHandle') }}</a></p>
             <p>Organizers of AberdeenPHP are dedicated to providing a harassment-free experience for everyone, regardless of gender, age, sexual orientation, disability, physical appearance, body size, race, or religion (or lack thereof). We do not tolerate harassment of meetup participants in any form. Sexual language and imagery is not appropriate for any meetup venue, including talks, workshops, parties, Twitter and other online media. User group&nbsp;participants violating these rules may be asked to leave.</p>
             <p>We expect participants to follow these rules at event venues and AberdeenPHP related social events.</p>
             <hr>
