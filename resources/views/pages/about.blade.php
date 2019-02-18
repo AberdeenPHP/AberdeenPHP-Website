@@ -7,7 +7,7 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <h1>History and Background</h1>
             <p>PHP (<a href="http://php.net/manual/en/intro-whatcando.php">Hypertext Preprocessor</a>) is one of the most popular programming languages used by people building websites (and mobile applications).</p>
-            <p>Aberdeen PHP user group was started in December 2014 by <a href="{{ config('site.dannyContactUrl') }}">Danny Wilson</a> and we've been 
+            <p>Aberdeen PHP user group was started in December 2014 by <a href="{{ config('site.dannyContactUrl') }}">Danny Ockilson</a> and we've been 
                 meeting every first Wednesday of the month since then.  Although formed as a PHP user 
                 group, it really embraces the full gamut of the web.</p>
 
