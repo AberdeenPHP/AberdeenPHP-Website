@@ -9,11 +9,11 @@
             together and discuss just about anything in and around the PHP Community.</p>
             <p>We usually meet on the first Wednesday of each month and run talks or open conversations around a variety of tech topics; with a 
             focus on PHP development but extending to general development practises.</p>
-            <p>We usually meet at Fifth Ring, who kindly let us use a room. They're at <a href="https://www.google.co.uk/maps/place/Fifth+Ring+Ltd/@57.145627,-2.1102727,17z/data=!3m1!4b1!4m5!3m4!1s0x48840e2407f91149:0xa38e0f81685d16e4!8m2!3d57.145627!4d-2.108084">47-49 Huntly Street, Aberdeen, AB10 1TH</a>.  If 
-            the door is shut, just knock on the window to right of the door.  We usually start at <time>6:30pm</time> and run till about around 8:30 or 9:00pm.</p>
+            <p>We usually meet at ONE Codebase, who kindly let us use a room. They're at ONE Tech Hub, Schoolhill, Aberdeen AB10 1FR. If 
+            the door is shut, just knock on the window to right of the door.  We usually start at <time datetime="18:30">6:30pm</time> and run till about around <time datetime="20:00">8:00</time> or <time datetime="20:30">8:30pm</time></p>
             <p>We provide pizza, beer, soft drinks and terrible jokes.</p>	
             <p>The group is diverse, welcoming, sociable, relaxed, irreverent, informative and fun.</p>	
-            <p>It is probably a good idea to check <a href="{{ config('site.ourTwitterUrl') }}">AberdeenPHP on Twitter</a> a couple of days before the meeting, incase the time or venue has changed.</p>	
+            <p>It is probably a good idea to check <a href="{{ config('site.ourTwitterUrl') }}">AberdeenPHP on Twitter</a> a couple of days before the meeting, in case the time or venue has changed.</p>
         </div>
         <div class="col-md-4">
             <a 
