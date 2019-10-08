@@ -1,0 +1,40 @@
+language: php
+php:
+- 7.2
+services:
+- mysql
+addons:
+  apt:
+    sources:
+    - mysql-5.7-trusty
+    packages:
+    - mysql-server
+    - mysql-client
+dist: trusty
+sudo: required
+before_script:
+- cp .env.travis .env
+- composer self-update
+- composer install --no-interaction
+- mysql -e 'create database homestead_test;'
+- npm install
+- npm run production
+script:
+- php artisan key:generate
+- vendor/bin/phpunit
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
+notifications:
+  slack:
+    rooms:
+      secure: Kq4VaMSwhebLyoqsLmVbh7ZhdOAut/7fgHrPgj6c3sX0Sn2bz5lHI6AT9c50eNlq87LiPDvPpXt8Wa3GFadpqlRP3u9EwNA2N4PTQ70VJWQXw8geg1yRJnSGs972SZDZxTM37Sdod/I+sLgOYo0C5aYLp4egqme75mKXqo+oexoaj7uDcCZK1RhXuzlojG0+1SPA+d7ya+hoQOAKWMoiTMviw011nLgZFSze9wHhdsZx9sszcRpnv4Oj9GzBeN6qs8nIMPf0WS2TUNb6mt7SrwA4JwyMsjraYcuwzbMASJIkfYEtSY0dYeOU+gafMvT34SmHdHir32U2yJ43CsWIrtgBBu26BJodoXhV5qwxfQxIkPsbZFOThoyDX5FSHaIDlohxUfAzWo5qs3TwIkPhCSNCCmQizbH9rlBFtDLhSWZIr9LB2c5ILxNvnOpQDaJziVSkicSJMbDD0uL+5qWi+rNH1N+rMpZwRM3BxmKfT/OfF5gormvKDnfzttGl5VebZ/UI5TB8MI419pAzi3UrmT2fJnyWum7p/17W/prmkUmjF/2M4M37T7+rIg80QOzBnnkpCSsjKGAV4s+3l7608Grxdi9MBg9+IyIqCgSqogZoyWrOuLmwY5OXIai6So+NmA46lf0kbeCJhjuCp1RIKdqN6zTviuJICbxwQ+o0aDE=
+cache:
+  directories:
+  - "$HOME/.composer/cache"
+  - "$HOME/.npm"
+env:
+  global:
+    secure: AaI+Eu47yTowMKyJdEG9EIHUF1GDEDr2z9t0qaVerC+qEvomiGwnSDcqHveBI+NDazUCgqZGsXfuEi7+jJzzHxo2XNIb5/3XVpl3jWqIXXdVTgy2hOcwWFhQ3OCfv8YB7BHjvdNi6WkrSaOvrzQlcGFuKV00N4o2Gsm+S5vtdLr7OP8By9dwg6hvNJoODnrJxPgPXeYJC5BvOjWkWzqPEVjJv45E9UmO+NabZ9y32LT82DqgmW1ps0oRg0/X2f+MGYlQ4TBoWP37T0rpWglOYaVN3nVVVH83hq67yOXDliZJwGIPQHjOl58JLRvepA/wtey7a4TrjENxlkconfYkBQLlSp7OmSlaIvqHyC6r7Fy7hkZNq9x7GCTfDHJ9qMlwcknObA+QyDmIOMG/CNpJAqKJSwPzDjZXcb8dEyj1O1VC5F4A9SiK4tSTwJ+hzlSrlMeixs9huLi+uWbaSCU4d2ufjvYz5wV8QxefLrllIoVMrS7arX9FIrsE3LjGfbQKRPsPBSR1H7AsOGqTPUyFWA0A6bfOr+VFsWCHyDVPJPSI6EvQqJpYHZxsJtkS+9FKolVoEyG0Vzk5qlvpclJLFIQQy4EvQXQvf8GMhuGolAO9s1oOXdmirYAZVQqYl6Dd/RhjPmwORG//OMwWmd5K6pD3i++4QMLs+gJ5s4Cb260=

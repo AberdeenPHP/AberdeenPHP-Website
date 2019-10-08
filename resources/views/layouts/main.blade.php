@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ $description or 'Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.' }}">
+    <meta name="description" content="{{ $description ?? 'Aberdeen PHP User Group aims to provide a regular meeting for developers in Aberdeen and the surrounding areas to get together and discuss just about anything in and around the PHP Community.' }}">
     <meta name="author" content="Aberdeen PHP">
-    <meta name="keywords" content="{{ $keywords or 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
+    <meta name="keywords" content="{{ $keywords ?? 'aberdeen,php,web development,linux,apache,css,html,javascript,lamp,docker,laravel,scotland,grampian,php user group,php ug'}}">
     <meta name="msvalidate.01" content="08CCB8004B0AB85022A49662B898CA1C" />
     <meta name="google-site-verification" content="24vvvmBhpQ5J9fP088rOmKxuYL6qDaKPvczOA3p5CkI" />
-    <title>{{ $title or 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
+    <title>{{ $title ?? 'Aberdeen PHP' }} - Aberdeen PHP User Group</title>
     <link href="images/icons/favicon.ico" rel="shortcut icon" type="{{ url('image/vnd.microsoft.icon') }}" />
     <link rel="shortcut icon" type="image/x-icon" href="{{ url('images/icons/favicon.ico') }}">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('images/icons/apple-touch-icon-144-precomposed.png') }}">
@@ -35,10 +35,11 @@
     <![endif]-->
     <meta property="og:url"                content="{{ Request::url() }}" />
     <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="{{ $title or '' }} - Aberdeen PHP User Group" />
+    <meta property="og:title"              content="{{ $title ?? '' }} - Aberdeen PHP User Group" />
     <meta property="og:image"              content="https://aberdeenphp.co.uk/images/for_facebook/share_image_1.jpg" />
     <meta property="og:description"        content="Aberdeen PHP User is a regular meeting for developers in Aberdeen and the surrounding areas to discuss just about anything in and around the PHP Community">
     
+    @stack('head')
 </head>
 <body>
 
@@ -58,28 +59,28 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="{{ route('homepage') }}">Home</a>
                     </li>
                     <li>
-                        <a href="/about">About Us</a>
+                        <a href="{{ route('about') }}">About Us</a>
                     </li>
                     <li>
-                        <a href="/events">Events</a>
+                        <a href="{{ route('events') }}">Events</a>
                     </li>                    
                     <li>
-                        <a href="/give-a-talk">Give a talk</a>
+                        <a href="{{ route('talk') }}">Give a talk</a>
                     </li>                    
                     <li>
-                        <a href="/sponsorship">Sponsorship</a>
+                        <a href="{{ route('sponsorship') }}">Sponsorship</a>
                     </li>
                     <li>
                         <a href="https://news.aberdeenphp.co.uk" target="_blank">News <i class="fa fa-external-link" aria-hidden="true"></i></a>
                     </li>                      
                     <li>
-                        <a href="/community">Community</a>
+                        <a href="{{ route('community') }}">Community</a>
                     </li>                                       
                     <li>
-                        <a href="/contact">Contact</a>
+                        <a href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -90,14 +91,14 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ $image or $randomBackgroundImage }})">
+    <header class="intro-header" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ $image ?? $randomBackgroundImage }})">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <div class="site-heading">
-                        <h1>{{ $title or 'Aberdeen PHP' }}</h1>
+                        <h1>{{ $title ?? 'Aberdeen PHP' }}</h1>
                         <hr class="small">
-                        <span class="subheading">{{ $tagline or "The monthly meetup for Aberdeen's Developers" }}</span>
+                        <span class="subheading">{{ $tagline ?? "The monthly meetup for Aberdeen's Developers" }}</span>
                     </div>
                 </div>
             </div>
@@ -116,7 +117,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="https://slack.scotlandphp.co.uk/" title="ScotlandPHP Slack Channel" target="_blank">
+                            <a href="{{ config('site.ourSlackUrl') }}" title="ScotlandPHP Slack Channel" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-slack fa-stack-1x fa-inverse"></i>
@@ -124,7 +125,7 @@
                             </a>
                         </li>                    
                         <li>
-                            <a href="https://twitter.com/aberdeenphp" title="AberdeenPHP on Twitter" target="_blank">
+                            <a href="{{ config('site.ourTwitterUrl') }}" title="AberdeenPHP on Twitter" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -132,7 +133,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/aberdeenpug/"  title="AberdeenPHP on Facebook" target="_blank">
+                            <a href="{{ config('site.ourFacebookUrl') }}"  title="AberdeenPHP on Facebook" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -140,7 +141,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://us10.campaign-archive2.com/home/?u=20b87746549994300f14bd083&id=509b586b54" title="AberdeenPHP on MailChimp" target="_blank">
+                            <a href="{{ config('site.ourMailingListUrl') }}" title="AberdeenPHP Mailing List" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -148,7 +149,7 @@
                             </a>
                         </li>                        
                         <li>
-                            <a href="https://github.com/AberdeenPHP" title="AberdeenPHP on GitHub" target="_blank">
+                            <a href="{{ config('site.ourGitHubUrl') }}" title="AberdeenPHP on GitHub" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -156,7 +157,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.scotlandphp.co.uk/" title="ScotlandPHP" target="_blank">
+                            <a href="{{ config('site.scotlandPHPUrl') }}" title="ScotlandPHP" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
@@ -165,15 +166,18 @@
                         </li>                        
                     </ul>
                     <p class="footerlinks">
-                        <a href="/code-of-conduct">Code of Conduct</a>
+                        <a href="{{ route('coc') }}">Code of Conduct</a>
                         |
-                        <a href="/privacy">Privacy</a>
+                        <a href="{{ route('privacy') }}">Privacy</a>
                         |
-                        <a href="/terms">Website T's &amp; C's</a>
+                        <a href="{{ route('terms') }}">Website T's &amp; C's</a>
                         |
-                        <a href="/cookies">Cookies</a>
+                        <a href="{{ route('cookies') }}">Cookies</a>
                     </p>
-                    <p class="copyright text-muted">Copyright &copy; Aberdeen PHP {{ date("Y") }} | Powered by PHP6</p>
+                    <p class="copyright text-muted">
+                        &copy; Aberdeen PHP {{ date("Y") }} |
+                        Images Kindly Provided By <a href="http://notnixon.com/" target="_blank">(notnixon)</a> | 
+                        Powered by PHP6</p>
                 </div>
             </div>
         </div>
@@ -186,8 +190,10 @@
     <!-- Theme JavaScript -->
     <script src="{{ mix('js/theme.js') }}"></script>
     
-    @stack('javascriptfrompages')
-
+    <script>
+        @stack('javascriptfrompages')
+    </script>
+    
     @if(App::environment('production'))
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -1,9 +1,12 @@
+[![StyleCI](https://github.styleci.io/repos/65073167/shield?branch=master)](https://github.styleci.io/repos/65073167)
+[![Build Status](https://travis-ci.com/AberdeenPHP/AberdeenPHP-Website.svg?branch=master)](https://travis-ci.com/AberdeenPHP/AberdeenPHP-Website)
+
 # Site
 Website for AberdeenPHP User Group
 
 ## Background
 This is the fourth version of the AberdeenPHP website.  
-The first was, I think a Github pages thing, the second was WordPress, this one uses the Laravel 5.4 framework. 
+The first was, I think a Github pages thing, the second was WordPress, this one uses the Laravel 5.7 framework.
 
 ## Contributing
 One of the easiest way to contribute is to get a copy of this website working on your computer, make any changes, then create a pull request. 
@@ -38,14 +41,11 @@ Okay - lets run through the process, start with the 'routes' file:
 
 #### Routes - [/routes/web.php](/routes/web.php)
 
-This is where all the url's (endpoints) for the website are set up. It should be fairly easy to see what's happening here. You visit a certain url in the browser, and we return a 'view'.
+This is where all the url's (endpoints) for the website are set up. It should be fairly easy to see what's happening here. You visit a certain url in the browser, we head off to a controller that will do a little cleverness and give your browser a 'view'.
 
-Each view is passed some data - in this case `title` and `tagline`. No need for the dollar sign - Laravel adds those for you in the 'view'.
+We've included a little sample code in the [/routes/web.php](/routes/web.php) file to get you started.
 
-_Normally each 'route' in this file would call a method in a controller class which would then return the view._
-_For simplicity we are skipping that bit!_
-
-Go ahead and created your new route following the same format. Once that's done lets head off to the views:
+Go ahead and created your new route. Once that's done lets head off to the views:
 
 #### Views - [/resources/views/](/resources/views/)
 
@@ -74,17 +74,27 @@ If you are familiar with SASS/SCSS this folder will make sense. Its fairly basic
 
 To compile the SASS to regular CSS you run `npm run dev` from the command line.
 
-(You can run `npm run production` when you are ready to upload your changes - this reduced the file sizes dramatically)
-
 Getting Webpack (and NPM) installed can be a challenging and frustrating experience. In most cases you will only need to run `npm install` from the root directory of this project and magic will happen. 
 
-Its a bit beyond the scope of this guide to go into all that. Have a look at the [Laravel Docs](https://laravel.com/docs/5.4/mix) or get in touch and we'll help!
+Its a bit beyond the scope of this guide to go into all that. Have a look at the [Laravel Docs](https://laravel.com/docs/5.7/mix) or get in touch and we'll help!
 
 #### JavaScript - [/resources/assets/js/](/resources/assets/js/)
 
 As with the SASS you'll find the the websites JavaScript in this folder. If you are wondering how it gets from here to the `public/js` folder, well that uses webpack too.
 
 In fact - now is a good time to have a look at the [webpack.mix.js](/webpack.mix.js) and you'll see the code that points to this file.
+
+#### Config File
+
+In the config directory you'll find a [/config/site.php](/config/site.php) file. This is a central place for most of contact details or links around the website. 
+
+By placing this data in a config file it makes it almost impossible to accidentally forget to update a link buried deep on the website.
+
+#### Tests and Build Process
+
+When you submit a Pull Request we have Travis CI installed. This will automatically create an in-memory copy of the website and run the tests that you have added (you did add tests - right?) You can see the config for this process in the [/.travis.yml](.travis.yml) file. 
+
+When your pull request is merged to master a deployment is triggered on the server and this also creates and css and javascript as it runs.
 
 
 #### Other Bits
@@ -94,11 +104,11 @@ If you are a little more familiar with Laravel here's some notes:
 1. There's a `ViewServiceProvider` which injects the background image url into the main layout view.
 2. Yes - there's controller type stuff in the routes file. Keeping things simple here remember!
 3. The views should be broken up into smaller partials but again, keeping it simple.
-4. On the homepage only some JavaScript is loaded for twitter. Its a bit of cheat but a simple [Stack](https://laravel.com/docs/5.4/blade#stacks) has been used here.
+4. On the homepage only some JavaScript is loaded for twitter. Its a bit of cheat but a simple [Stack](https://laravel.com/docs/5.7/blade#stacks) has been used here.
 
 ## Resources
-* It's built using bootstrap 3.3.7, so you can use all the css and components in http://getbootstrap.com/
-* I includes Font Awsome 4.6.3, so you can use all the font icons and stuff at http://fontawesome.io/icons/
+* It's built using bootstrap 3.3.7, so you can use all the css and components in https://getbootstrap.com/
+* It includes Font Awesome 4.6.3, so you can use all the font icons and stuff at http://fontawesome.io/icons/
 * It was based on the template at https://github.com/BlackrockDigital/startbootstrap-clean-blog 
-* Laravel Docs are here https://laravel.com/docs/5.4
+* Laravel Docs are here https://laravel.com/docs/5.7
 * If you want to learn Laravel - there is no better place to start than [right here](https://laracasts.com/).

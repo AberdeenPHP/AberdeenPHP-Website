@@ -40,16 +40,19 @@ Homestead.json
 .env.php
 .env
 composer.phar
-composer.lock
+# composer.lock
+package-lock.json
+npm-debug.log
+yarn-error.log
 
 # End of https://www.gitignore.io/api/sublimetext,laravel
 =======
 composer.phar
-vendor/
 .idea/
 node_modules/
 .DS_Store
 .env
+.vscode
 
 # Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
@@ -61,3 +64,15 @@ node_modules/
 containers/
 Makefile
 docker-compose.yml
+
+# Ignore Richard's Docker Stuff
+/docker
+develop.sh
+
+# php cs fixer cache
+.php_cs.cache
+
+# assets are now being buitl on the server
+/public/css
+/public/js
+/public/mix-manifest.json
